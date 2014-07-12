@@ -1,0 +1,123 @@
+@import "partials/_base";
+@import "partials/top";
+
+/*/ Page Stuff /*/
+
+section
+{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+h3
+{}
+
+/*/ Bootstrap Overrides /*/
+
+select, input
+{
+	width: auto !important ;
+}
+
+.form-group
+{
+	label
+	{
+		display: block;
+		width: 100%;
+	}
+}
+
+/*/ Custom Controls /*/
+
+.multipicker
+{
+	.multipicker-row
+	{
+		select, a.remove
+		{
+			display: inline-block;
+		}
+
+		select
+		{
+			width: 75% !important;
+		}
+
+		a.remove
+		{
+			margin-left: 10px;
+		}
+	}
+
+	a.button.add
+	{
+		@include button( $color-blue-dull-dark, white, true );
+	}
+}
+
+.input-list
+{
+	.input-list-row
+	{
+		input, a.remove
+		{
+			display: inline-block;
+		}
+
+		input
+		{
+			width: 75% !important;
+		}
+
+		a.remove
+		{
+			margin-left: 10px;
+		}
+	}
+
+	a.button.add
+	{
+		@include button( $color-blue-dull-dark, white, true );
+	}
+}
+
+.photo-chooser
+{
+	.photo-preview
+	{
+		@include block-background;
+
+		width: 100px;
+		height: 100px;
+
+		background-color: $color-gray-light;
+	}
+
+	a.button
+	{
+		margin-top: 10px;
+	}
+}
+
+.input-then-select
+{
+	input
+	{
+		float: left;
+	}
+
+	select
+	{
+		float: left;
+		margin-left: 10px;
+	}
+}
+
+
+/*/ Buttons /*/
+
+.button.submit
+{
+	@include button( $color-primary, white );
+}
