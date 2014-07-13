@@ -11,6 +11,8 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="../_assets/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="../_assets/plugins/calendar/calendar.css">
     </head>
     <body>
         <header>
@@ -48,35 +50,72 @@
         <div id="main">
             <article id="top" class="detail">
                 <div class="wrapper container">
-                    <a href="" class="action button small primary"><span class="icon icon-course-add">&nbsp;</span>Follow Course</a>
-                    <div class="thumbnail" style="background-image:url('../_assets/images/people/19.jpg')">&nbsp;</div>
-                    <h1>Statistics 101</h1>
-                    <span class="subtitle">Stanford University</span>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <a href="" class="action button small primary"><span class="icon icon-course-add">&nbsp;</span>Follow Course</a>
+                            <a href="./detail.html"><div class="thumbnail" style="background-image:url('../_assets/images/courses/stats101.jpg')">&nbsp;</div></a>
+                            <h1>Statistics 101</h1>
+                            <span class="subtitle">Stanford University</span>
+                        </div>
+                    </div>
                 </div>
             </article>
 
             <article id="main-content" class="container">
 
-                <section id="events">
-                    <div class="row">
+                <section id="events" class="row">
+                    <div class="col-md-10 col-md-offset-1">
                         <div class="group-heading">
                             <h3><span class="icon icon-event">&nbsp;</span>Events</h3>
-                            <a href="#" class="right">See all 13 events</a>
+                            <a href="./events.html" class="right">See all 13 events</a>
                         </div>
-                    </div>
-                    <div class="row">
-                        .....
+                        <div class="" id="calendar-wrapper">
+                            <div class="row">
+                                <div class="col-md-12 calender-heading">
+                                    <a class="button" data-calendar-nav="prev"><span class="icon icon-prev"></span></a>
+                                    <h4></h4>
+                                    <a class="button" data-calendar-nav="next"><span class="icon icon-next"></span></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div id="calendar"></div>
+                                    <script type="text/javascript" src="../_assets/plugins/underscore/underscore-min.js"></script>
+                                    <script type="text/javascript" src="../_assets/plugins/calendar/calendar.min.js"></script>
+                                    <script type="text/javascript" src="../_assets/plugins/calendar/init-course.js"></script>
+                                </div>
+                                <div class="col-md-3">
+                                    <h4>Upcoming</h4>
+                                    <ul class="tablelist-group">
+                                        <li class="tablelist-group-row">
+                                            <ul class="tablelist">
+                                                <li class="main">
+                                                    <div class="title"><a href="#">Midterms Study Sesh</a></div>
+                                                    <div class="subtitle"><span class="icon icon-course"> Stat 101</span>&bull;<span class="icon icon-location"> Pioneer Square</span></div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tablelist-group-row">
+                                            <ul class="tablelist">
+                                                <li class="main">
+                                                    <div class="title"><a href="#">Midterms Study Sesh</a></div>
+                                                    <div class="subtitle"><span class="icon icon-course"> Stat 101</span>&bull;<span class="icon icon-location"> Pioneer Square</span></div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 
-                <section id="followers">
-                    <div class="row">
+                <section id="followers" class="row">
+                    <div class="col-md-10 col-md-offset-1">
                         <div class="group-heading">
                             <h3><span class="icon icon-people">&nbsp;</span>Followers</h3>
                             <a href="#" class="right">See all 46 followers</a>
                         </div>
-                    </div>
-                    <div class="row">
                         <ul class="block-list">
                             <li class="">
                                 <a href="#"><div class="block" style="background-image:url('../_assets/images/people/1.jpg')">&nbsp;</div></a>
@@ -109,13 +148,11 @@
                     </div>
                 </section>
 
-                <section id="tutors">
-                    <div class="row">
+                <section id="tutors" class="row">
+                    <div class="col-md-10 col-md-offset-1">
                         <div class="group-heading">
                             <h3><span class="icon icon-tutor">&nbsp;</span>Tutors</h3>
                         </div>
-                    </div>
-                    <div class="row">
                         <ul class="block-list">
                             <li class="">
                                 <a href="#"><div class="block" style="background-image:url('../_assets/images/people/13.jpg')">&nbsp;</div></a>
@@ -130,39 +167,37 @@
                     </div>
                 </section>
 
-                <section id="notes">
-                    <div class="row">
+                <section id="notes" class="row">
+                    <div class="col-md-10 col-md-offset-1">
                         <div class="group-heading">
                             <h3><span class="icon icon-note">&nbsp;</span>Notes</h3>
                         </div>
-                    </div>
-                    <div class="row">
-                        <ul class="list">
-                            <li class="list-row">
-                                <ul>
+                        <ul class="tablelist-group">
+                            <li class="tablelist-group-row">
+                                <ul class="tablelist">
                                     <li class="icon">
-                                        <a href="#"><img src="" /></a>
+                                        <a href="#"><span class="icon icon-file">&nbsp;</span></a>
                                     </li>
                                     <li class="main">
                                         <span class="title"><a href="#">Stats 101 - Notes - Wed June 1.pdf</a></span>
                                         <span class="subtitle">By <a href="./profile.html">Brian Forrester</a></span>
                                     </li>
-                                    <li class="date">6/01/2014</li>
-                                    <li class="views">2 views</li>
+                                    <li class="other">6/01/2014</li>
+                                    <li class="other">2 views</li>
                                     <li class="action"><a href="#">Download</a></li>
                                 </ul>
                             </li>
-                            <li class="list-row">
-                                <ul>
+                            <li class="tablelist-group-row">
+                                <ul class="tablelist">
                                     <li class="icon">
-                                        <a href="#"><img src="" /></a>
+                                        <a href="#"><span class="icon icon-file">&nbsp;</span></a>
                                     </li>
                                     <li class="main">
                                         <span class="title"><a href="#">Stats 101 - Notes - Wed June 1.pdf</a></span>
                                         <span class="subtitle">By <a href="./profile.html">Brian Forrester</a></span>
                                     </li>
-                                    <li class="date">6/01/2014</li>
-                                    <li class="views">2 views</li>
+                                    <li class="other">6/01/2014</li>
+                                    <li class="other">2 views</li>
                                     <li class="action"><a href="#">Download</a></li>
                                 </ul>
                             </li>

@@ -19,6 +19,6 @@ Clicking the profile button in nav ( top right ) will bring you to the site-map 
 
 ### Bootstrap plugins
 
-* [Bootstrap Calendar](http://bootstrap-calendar.azurewebsites.net)
+* [Bootstrap Calendar by Serhioromano](http://bootstrap-calendar.azurewebsites.net)
 * [Datepicker for Bootstrap](http://www.eyecon.ro/bootstrap-datepicker/?utm_source=twitterfeed&utm_medium=twitter)
 

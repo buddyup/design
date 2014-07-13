@@ -48,7 +48,7 @@
         <div id="main">
             <article id="top" class="simple">
                 <div class="wrapper container">
-                    <div class="row text-center">
+                    <div class="row">
                         <h1 class="col-md-6 col-md-offset-3">Site Map</h1>
                         <p class="col-md-6 col-md-offset-3">
                             Lorem Ipsum dolor sit amet is simply dummy text of the printing and typesetting industry.
@@ -57,17 +57,43 @@
                 </div>
             </article>
 
-            <article id="main-content">
+            <article id="main-content" class="container">
 
                 <section id="" class="row">
                     <div class="col-md-6 col-md-offset-3">
 
-                        <h3>Pages</h3>
+                        <div class="group-heading"><h3>Pages</h3></div>
                         <ul class="bulleted">
-                            <li class="main"><div class="title"><a href="./index.html">Home</a></div><div class="subtitle">--</div></li>
-                            <li class="main"><div class="title"><a href="./buddies/index.html">Buddies</a></div><div class="subtitle">--</div></li>
-                            <li class="main"><div class="title"><a href="./buddies/profile.html">Buddy Profile</a></div><div class="subtitle">--</div></li>
-                            <li class="main"><div class="title"><a href="./courses/detail.html">Course Detail</a></div><div class="subtitle">--</div></li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li>
+                                <a href="./buddies/index.html">Buddies</a>
+                                <ul class="bulleted">
+                                    <li>Buddies Filtered</li>
+                                    <li>Advanced Search</li>
+                                    <li><a href="./buddies/profile.html">Buddy Profile</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- <a href="./courses/index.html"> -->Courses<!-- </a> -->
+                                <ul class="bulleted">
+                                    <li><a href="./courses/detail.html">Course Detail</a></li>
+                                    <li>Course Followers</li>
+                                    <li>
+                                        <a href="./courses/events.html">Course Events</a>
+                                        <ul class="bulleted">
+                                            <li>Event Detail</li>
+                                            <li>Create Event</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- <a href="./courses/index.html"> -->Tutors<!-- </a> -->
+                                <ul class="bulleted">
+                                    <!-- <li><a href="./courses/detail.html">Course Detail</a></li> -->
+                                </ul>
+                            </li>
+                            <li>My Profile</li>
                         </ul>
 
                     </div>
@@ -76,10 +102,22 @@
                 <section id="" class="row">
                     <div class="col-md-6 col-md-offset-3">
 
-                        <h3>Templates</h3>
+                        <div class="group-heading"><h3>Templates</h3></div>
                         <ul class="bulleted">
-                            <li class="main"><div class="title"><a href="./templates/lists.html">Lists</a></div><div class="subtitle">--</div></li>
-                            <li class="main"><div class="title"><a href="./templates/single-form.html">Single Form</a></div><div class="subtitle">--</div></li>
+                            <li><a href="./templates/lists.html">Lists</a></li>
+                            <li><a href="./templates/single-form.html">Single Form</a></li>
+                            <li>Buttons and Icons</li>
+                            <li>Registration Page</li>
+                            <li>Modal</li>
+                            <li>
+                                Bare Pages
+                                <ul class="bulleted">
+                                    <li><a href="./templates/bare-simple.html">Simple</a></li>
+                                    <li><a href="./templates/bare-landing.html">Landing</a></li>
+                                    <li><a href="./templates/bare-detail.html">Detail</a></li>
+                                    <li><a href="./templates/bare-profile.html">Profile</a></li>
+                                </ul>
+                            </li>
                         </ul>
 
                     </div>

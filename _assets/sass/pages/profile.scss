@@ -5,6 +5,7 @@
 
 @import "../partials/_base";
 @import "../partials/top";
+@import "../partials/form";
 
 #main-content
 {
@@ -23,11 +24,10 @@ h3
 
 section
 {
+	padding: 0 !important;
+
 	& > div
 	{
-		padding-left: 20% !important;
-		padding-right: 20% !important;
-
 		padding-top: 40px;
 		padding-bottom: 40px;
 
@@ -72,10 +72,7 @@ section
 #about
 {
 	& > div
-	{
-		padding-left: 15% !important;
-		padding-right: 15% !important;
-	}
+	{}
 
 	p
 	{
@@ -87,10 +84,7 @@ section
 #interests
 {
 	& > div
-	{
-		padding-left: 0% !important;
-		padding-right: 0% !important;
-	}
+	{}
 
 	ul
 	{
@@ -98,6 +92,7 @@ section
 		{
 			display: inline-block;
 			margin-right: 0.5em;
+			margin-bottom: 1.0em;
 
 			&:last-child{ margin-right:0; }
 
@@ -160,54 +155,5 @@ section
 	h4
 	{
 		padding-bottom: 20px;
-	}
-}
-
-
-/// Move off
-
-
-.form-wrapper
-{
-	textarea
-	{
-		width: 100%;
-		padding: 1em;
-
-		border-radius: 8px;
-		background-color: $color-background-blue;
-		border: 1px solid $color-border-darker;
-	}
-
-	.message
-	{
-		display: block;
-		width: 100%;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
-
-		font-size: 14px;
-
-		&.success
-		{
-			color: green;
-		}
-
-		&.error
-		{
-			color: red;
-		}
-
-		.icon
-		{
-			font-size: 1.75em;
-		}
-	}
-
-	.action
-	{
-		margin-top: 20px;
-		
-		@include button( $color-primary, white, true );
 	}
 }

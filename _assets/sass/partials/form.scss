@@ -15,6 +15,49 @@ select, input
 	}
 }
 
+/*/ General form input styling /*/
+
+.message
+{
+	display: block;
+	width: 100%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+
+	font-size: 14px;
+
+	&.success
+	{
+		color: green;
+	}
+
+	&.error
+	{
+		color: red;
+	}
+
+	.icon
+	{
+		font-size: 1.75em;
+	}
+}
+
+textarea
+{
+	width: 100%;
+	padding: 1em;
+
+	border-radius: 8px;
+	background-color: $color-background-blue;
+	border: 1px solid $color-border-darker;
+}
+
+textarea + a.submit, textarea + .message + a.submit
+{
+	margin-top: 10px;
+	@include button( $color-primary, white, true );
+}
+
 /*/ Custom Controls /*/
 
 .multipicker

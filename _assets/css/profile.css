@@ -53,6 +53,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 8, ../sass/partials/icons.scss */
 .icon:before, .icon:after { font-family: "Entypo"; }
 
+/*/ /*/
 /* line 15, ../sass/partials/icons.scss */
 .icon.icon-course:before { content: '\1F4D5'; }
 
@@ -89,37 +90,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 48, ../sass/partials/icons.scss */
 .icon.icon-remove:before { content: '\2716'; }
 
-/* line 52, ../sass/partials/icons.scss */
+/* line 51, ../sass/partials/icons.scss */
+.icon.icon-prev:before { content: '\E761'; }
+
+/* line 54, ../sass/partials/icons.scss */
+.icon.icon-next:before { content: '\E762'; }
+
+/* line 57, ../sass/partials/icons.scss */
 .icon.icon-person-add { position: relative; display: inline-block; padding-right: 0.25em; }
 
-/* line 59, ../sass/partials/icons.scss */
+/* line 64, ../sass/partials/icons.scss */
 .icon.icon-person-add:before { content: '\1F464'; }
 
-/* line 62, ../sass/partials/icons.scss */
+/* line 67, ../sass/partials/icons.scss */
 .icon.icon-person-add:after { content: '\2795'; position: absolute; left: .45em; top: 0.1em; }
 
-/* line 70, ../sass/partials/icons.scss */
+/* line 75, ../sass/partials/icons.scss */
 .icon.icon-course-add { position: relative; display: inline-block; padding-right: 0.25em; }
 
-/* line 77, ../sass/partials/icons.scss */
+/* line 82, ../sass/partials/icons.scss */
 .icon.icon-course-add:before { content: '\1F4D5'; }
 
-/* line 80, ../sass/partials/icons.scss */
+/* line 85, ../sass/partials/icons.scss */
 .icon.icon-course-add:after { content: '\2795'; position: absolute; left: .45em; top: 0.1em; }
 
-/* line 88, ../sass/partials/icons.scss */
+/* line 93, ../sass/partials/icons.scss */
+.icon.icon-event-add { position: relative; display: inline-block; padding-right: 0.25em; }
+
+/* line 100, ../sass/partials/icons.scss */
+.icon.icon-event-add:before { content: '\1F554'; }
+
+/* line 103, ../sass/partials/icons.scss */
+.icon.icon-event-add:after { content: '\2795'; position: absolute; left: .75em; top: 0.05em; font-size: 0.75em; }
+
+/* line 112, ../sass/partials/icons.scss */
 .icon.icon-followed { display: inline-block; padding-right: 0.1em; }
 
-/* line 94, ../sass/partials/icons.scss */
+/* line 118, ../sass/partials/icons.scss */
 .icon.icon-followed:before { content: '\2713'; font-size: 1.1em; }
 
-/* line 97, ../sass/partials/icons.scss */
+/* line 121, ../sass/partials/icons.scss */
 .icon.icon-interest { position: relative; display: inline-block; padding-right: 0.25em; }
 
-/* line 104, ../sass/partials/icons.scss */
+/* line 128, ../sass/partials/icons.scss */
 .icon.icon-interest:before { position: absolute; content: '\25CF'; font-size: 2.2em; top: -0.25em; left: -0.25em; }
 
-/* line 113, ../sass/partials/icons.scss */
+/* line 137, ../sass/partials/icons.scss */
 .icon.icon-interest:after { content: '#'; position: absolute; left: -0.43em; top: 0.6em; font-size: 0.55em; color: white; }
 
 /* line 2, ../sass/partials/header.scss */
@@ -188,41 +204,46 @@ h1, h2, h3, h4, h5 { font-family: "Lato", "HelveticaNeue", "Helvetica", "Arial",
 /* line 28, ../sass/partials/_base.scss */
 h1 { font-size: 52px; }
 
-/* line 33, ../sass/partials/_base.scss */
-h3 { font-weight: 100; text-transform: uppercase; font-size: 22px; color: #191919; }
+/* line 34, ../sass/partials/_base.scss */
+h3 { font-weight: 200; text-transform: uppercase; font-size: 18px; color: #999999; }
 
-/* line 41, ../sass/partials/_base.scss */
-h4 { font-weight: 100; font-size: 20px; color: #191919; }
+/* line 42, ../sass/partials/_base.scss */
+h4 { font-weight: 200; font-size: 18px; color: #999999; }
+
+/*/ /*/
+/* line 51, ../sass/partials/_base.scss */
+article#main-content { padding-top: 60px; padding-bottom: 100px; }
+
+/* line 57, ../sass/partials/_base.scss */
+article#main-content section { padding-top: 40px; padding-bottom: 40px; }
+/* line 62, ../sass/partials/_base.scss */
+article#main-content section:first-child { padding-top: 0px; }
 
 /*/ Special classes /*/
-/* line 50, ../sass/partials/_base.scss */
+/* line 68, ../sass/partials/_base.scss */
 .hide { display: none; }
 
-/* line 53, ../sass/partials/_base.scss */
+/* line 71, ../sass/partials/_base.scss */
 ul.horizontal { display: table; }
 
-/* line 56, ../sass/partials/_base.scss */
+/* line 74, ../sass/partials/_base.scss */
 ul.horizontal li { display: table-cell; }
 
-/* line 59, ../sass/partials/_base.scss */
+/* line 77, ../sass/partials/_base.scss */
 ul.bulleted { list-style-type: disc; padding-left: 1.25em; }
 
 /*/ Bootstrap overrides /*/
-/* line 67, ../sass/partials/_base.scss */
-div#main .container { padding-left: 40px; padding-right: 40px; }
-
 /*/  Temp area  /*/
-/* line 76, ../sass/partials/_base.scss */
-article#main-content { padding-top: 60px; padding-bottom: 100px; }
-
-/* line 83, ../sass/partials/_base.scss */
+/* line 94, ../sass/partials/_base.scss */
 .group-heading { overflow: auto; padding-bottom: 10px; margin-bottom: 20px; border-bottom: 1px solid #f3f6f7; }
-/* line 91, ../sass/partials/_base.scss */
-.group-heading h3 { float: left; font-weight: 400; color: #999999; font-size: 18px; text-transform: none; }
-/* line 100, ../sass/partials/_base.scss */
-.group-heading h3 .icon { margin-right: 10px; font-size: 1.5em; line-height: 0em; }
-/* line 109, ../sass/partials/_base.scss */
-.group-heading a.right { float: right; font-size: 14px; }
+/* line 102, ../sass/partials/_base.scss */
+.group-heading h3 { float: left; }
+/* line 106, ../sass/partials/_base.scss */
+.group-heading h3 .icon { margin-right: 5px; font-size: 1.5em; line-height: 0em; }
+/* line 116, ../sass/partials/_base.scss */
+.group-heading a.right { color: #0098cb; float: right; font-size: 14px; }
+/* line 101, ../sass/partials/mixins.scss */
+.group-heading a.right:hover { color: white; background-color: #0098cb; border-radius: 0px; text-decoration: none; }
 
 /* line 2, ../sass/partials/top.scss */
 #top { overflow: auto; padding-top: 40px; background-color: #f9fafb; border-top: 1px solid #f3f6f7; border-bottom: 1px solid #f3f6f7; color: #568da3; }
@@ -232,9 +253,11 @@ article#main-content { padding-top: 60px; padding-bottom: 100px; }
 #top a.action { display: inline-block; }
 
 /* line 26, ../sass/partials/top.scss */
-#top.simple { padding-top: 60px; padding-bottom: 30px; }
+#top.simple { padding-top: 60px; padding-bottom: 40px; }
+/* line 31, ../sass/partials/top.scss */
+#top.simple h1 { margin-bottom: 20px; }
 /* line 36, ../sass/partials/top.scss */
-#top.simple h1 { margin-bottom: 30px; }
+#top.simple h1:only-child { margin-bottom: 0px; }
 /* line 41, ../sass/partials/top.scss */
 #top.simple p { color: #999999; font-size: 18px; line-height: 1.5em; }
 /* line 48, ../sass/partials/top.scss */
@@ -246,50 +269,148 @@ article#main-content { padding-top: 60px; padding-bottom: 100px; }
 #top.detail .thumbnail { background-repeat: no-repeat; background-size: 100% auto; background-position: center center; width: 80px; height: 80px; border-radius: 0; float: left; margin-right: 40px; border: 1px solid #999999; }
 /* line 72, ../sass/partials/top.scss */
 #top.detail .thumbnail + h1 { font-size: 48px; }
-/* line 81, ../sass/partials/top.scss */
-#top.detail .subtitle { display: inline-block; margin-top: 5px; color: #999999; font-size: 14px; }
-/* line 90, ../sass/partials/top.scss */
-#top.detail .action { float: right; }
+/* line 78, ../sass/partials/top.scss */
+#top.detail h1 { margin-top: 5px; font-size: 46px; }
+/* line 84, ../sass/partials/top.scss */
+#top.detail .subtitle { display: inline-block; margin-top: 10px; color: #999999; font-size: 14px; }
+/* line 92, ../sass/partials/top.scss */
+#top.detail .subtitle span { margin-left: 1em; margin-right: 1em; }
+/* line 96, ../sass/partials/top.scss */
+#top.detail .subtitle span:first-child { margin-left: 0; }
+/* line 97, ../sass/partials/top.scss */
+#top.detail .subtitle span:last-child { margin-right: 0; }
+/* line 100, ../sass/partials/top.scss */
+#top.detail .subtitle span.icon:before { font-size: 1.5em; color: #cccccc; }
+/* line 106, ../sass/partials/top.scss */
+#top.detail .subtitle span a { color: #0098cb; color: #999999; }
+/* line 101, ../sass/partials/mixins.scss */
+#top.detail .subtitle span a:hover { color: white; background-color: #0098cb; border-radius: 0px; text-decoration: none; }
+/* line 114, ../sass/partials/top.scss */
+#top.detail .action { margin-top: 5px; float: right; }
 
-/* line 98, ../sass/partials/top.scss */
+/* line 123, ../sass/partials/top.scss */
+#top.filter .col-md-12.col-md-offset-0 { padding-left: 40px; padding-right: 40px; }
+/* line 129, ../sass/partials/top.scss */
 #top.filter h1 { display: inline-block; float: left; padding-bottom: 30px; }
-/* line 105, ../sass/partials/top.scss */
+/* line 136, ../sass/partials/top.scss */
 #top.filter a.action { float: right; }
-/* line 110, ../sass/partials/top.scss */
+/* line 141, ../sass/partials/top.scss */
 #top.filter ul.filter { display: table; width: 100%; margin-top: 20px; }
-/* line 116, ../sass/partials/top.scss */
+/* line 147, ../sass/partials/top.scss */
 #top.filter ul.filter li { display: table-cell; width: 1%; text-align: center; padding-left: 20px; padding-right: 20px; }
-/* line 125, ../sass/partials/top.scss */
+/* line 156, ../sass/partials/top.scss */
 #top.filter ul.filter li:first-child { text-align: left; padding-left: 0px; }
-/* line 131, ../sass/partials/top.scss */
+/* line 162, ../sass/partials/top.scss */
 #top.filter ul.filter li:last-child { width: auto; text-align: right; padding-left: 0px; padding-right: 0px; }
-/* line 139, ../sass/partials/top.scss */
+/* line 170, ../sass/partials/top.scss */
 #top.filter ul.filter li a { display: inline-block; padding-bottom: 10px; font-size: 14px; color: #88a7b2; text-decoration: none; }
-/* line 148, ../sass/partials/top.scss */
+/* line 179, ../sass/partials/top.scss */
 #top.filter ul.filter li a:hover { color: #ffaa00; }
-/* line 151, ../sass/partials/top.scss */
+/* line 182, ../sass/partials/top.scss */
 #top.filter ul.filter li a.selected { color: #568da3; font-weight: 400; border-bottom: 2px solid #ffaa00; }
 
-/* line 163, ../sass/partials/top.scss */
+/* line 194, ../sass/partials/top.scss */
 #top.profile { padding-bottom: 40px; text-align: center; }
-/* line 169, ../sass/partials/top.scss */
+/* line 200, ../sass/partials/top.scss */
 #top.profile div.profile-image { background-repeat: no-repeat; background-size: 100% auto; background-position: center center; display: inline-block; width: 180px; height: 180px; border-radius: 180px; }
-/* line 180, ../sass/partials/top.scss */
+/* line 211, ../sass/partials/top.scss */
 #top.profile h1 { padding-top: 20px; padding-bottom: 10px; }
-/* line 186, ../sass/partials/top.scss */
+/* line 217, ../sass/partials/top.scss */
 #top.profile .subtitle { padding-bottom: 30px; color: #999999; font-size: 16px; }
 
-/* line 10, ../sass/pages/profile.scss */
+/*/ Bootstrap Overrides /*/
+/* line 5, ../sass/partials/form.scss */
+select, input { width: auto !important; }
+
+/* line 12, ../sass/partials/form.scss */
+.form-group label { display: block; width: 100%; }
+
+/*/ General form input styling /*/
+/* line 21, ../sass/partials/form.scss */
+.message { display: block; width: 100%; padding-top: 0.5em; padding-bottom: 0.5em; font-size: 14px; }
+/* line 30, ../sass/partials/form.scss */
+.message.success { color: green; }
+/* line 35, ../sass/partials/form.scss */
+.message.error { color: red; }
+/* line 40, ../sass/partials/form.scss */
+.message .icon { font-size: 1.75em; }
+
+/* line 46, ../sass/partials/form.scss */
+textarea { width: 100%; padding: 1em; border-radius: 8px; background-color: #f9fafb; border: 1px solid #e7edef; }
+
+/* line 56, ../sass/partials/form.scss */
+textarea + a.submit, textarea + .message + a.submit { margin-top: 10px; display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; }
+/* line 39, ../sass/partials/mixins.scss */
+textarea + a.submit .icon, textarea + .message + a.submit .icon { font-size: 30px; }
+/* line 45, ../sass/partials/mixins.scss */
+textarea + a.submit:hover, textarea + .message + a.submit:hover { background-color: #0098cb; border: 1px solid #0098cb; color: white; }
+/* line 60, ../sass/partials/mixins.scss */
+textarea + a.submit.inactive, textarea + .message + a.submit.inactive { color: #0098cb !important; background-color: rgba(0, 152, 203, 0.2) !important; border: 1px solid rgba(0, 152, 203, 0.2) !important; }
+
+/*/ Custom Controls /*/
+/* line 68, ../sass/partials/form.scss */
+.multipicker .multipicker-row select, .multipicker .multipicker-row a.remove { display: inline-block; }
+/* line 73, ../sass/partials/form.scss */
+.multipicker .multipicker-row select { width: 75% !important; }
+/* line 78, ../sass/partials/form.scss */
+.multipicker .multipicker-row a.remove { margin-left: 10px; }
+/* line 84, ../sass/partials/form.scss */
+.multipicker a.button.add { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #568da3; background-color: white; border: 1px solid #568da3; }
+/* line 39, ../sass/partials/mixins.scss */
+.multipicker a.button.add .icon { font-size: 30px; }
+/* line 45, ../sass/partials/mixins.scss */
+.multipicker a.button.add:hover { background-color: #568da3; border: 1px solid #568da3; color: white; }
+/* line 60, ../sass/partials/mixins.scss */
+.multipicker a.button.add.inactive { color: #568da3 !important; background-color: rgba(86, 141, 163, 0.2) !important; border: 1px solid rgba(86, 141, 163, 0.2) !important; }
+
+/* line 94, ../sass/partials/form.scss */
+.input-list .input-list-row input, .input-list .input-list-row a.remove { display: inline-block; }
+/* line 99, ../sass/partials/form.scss */
+.input-list .input-list-row input { width: 75% !important; }
+/* line 104, ../sass/partials/form.scss */
+.input-list .input-list-row a.remove { margin-left: 10px; }
+/* line 110, ../sass/partials/form.scss */
+.input-list a.button.add { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #568da3; background-color: white; border: 1px solid #568da3; }
+/* line 39, ../sass/partials/mixins.scss */
+.input-list a.button.add .icon { font-size: 30px; }
+/* line 45, ../sass/partials/mixins.scss */
+.input-list a.button.add:hover { background-color: #568da3; border: 1px solid #568da3; color: white; }
+/* line 60, ../sass/partials/mixins.scss */
+.input-list a.button.add.inactive { color: #568da3 !important; background-color: rgba(86, 141, 163, 0.2) !important; border: 1px solid rgba(86, 141, 163, 0.2) !important; }
+
+/* line 118, ../sass/partials/form.scss */
+.photo-chooser .photo-preview { background-repeat: no-repeat; background-size: 100% auto; background-position: center center; width: 100px; height: 100px; background-color: #dddddd; }
+/* line 128, ../sass/partials/form.scss */
+.photo-chooser a.button { margin-top: 10px; }
+
+/* line 136, ../sass/partials/form.scss */
+.input-then-select input { float: left; }
+/* line 141, ../sass/partials/form.scss */
+.input-then-select select { float: left; margin-left: 10px; }
+
+/*/ Buttons /*/
+/* line 151, ../sass/partials/form.scss */
+.button.submit { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #0098cb; border: 1px solid #0098cb; }
+/* line 39, ../sass/partials/mixins.scss */
+.button.submit .icon { font-size: 30px; }
+/* line 45, ../sass/partials/mixins.scss */
+.button.submit:hover { background-color: transparent; color: #0098cb; }
+/* line 60, ../sass/partials/mixins.scss */
+.button.submit.inactive { color: #0098cb !important; background-color: rgba(0, 152, 203, 0.2) !important; border: 1px solid rgba(0, 152, 203, 0.2) !important; }
+
+/* line 11, ../sass/pages/profile.scss */
 #main-content { padding-top: 0px !important; }
 
-/* line 15, ../sass/pages/profile.scss */
+/* line 16, ../sass/pages/profile.scss */
 h3, section { text-align: center; }
 
-/* line 20, ../sass/pages/profile.scss */
+/* line 21, ../sass/pages/profile.scss */
 h3 { padding-bottom: 30px; }
 
-/* line 27, ../sass/pages/profile.scss */
-section > div { padding-left: 20% !important; padding-right: 20% !important; padding-top: 40px; padding-bottom: 40px; border-bottom: 1px solid #f3f6f7; }
+/* line 26, ../sass/pages/profile.scss */
+section { padding: 0 !important; }
+/* line 30, ../sass/pages/profile.scss */
+section > div { padding-top: 40px; padding-bottom: 40px; border-bottom: 1px solid #f3f6f7; }
 /* line 38, ../sass/pages/profile.scss */
 section:last-child > div { border-bottom: none; }
 
@@ -302,53 +423,30 @@ section:last-child > div { border-bottom: none; }
 /* line 64, ../sass/pages/profile.scss */
 #stats ul li .icon { color: #ffaa00; top: -3px; }
 
-/* line 75, ../sass/pages/profile.scss */
-#about > div { padding-left: 15% !important; padding-right: 15% !important; }
-/* line 81, ../sass/pages/profile.scss */
+/* line 78, ../sass/pages/profile.scss */
 #about p { font-size: 20px; line-height: 2em; }
 
-/* line 90, ../sass/pages/profile.scss */
-#interests > div { padding-left: 0% !important; padding-right: 0% !important; }
-/* line 98, ../sass/pages/profile.scss */
-#interests ul li { display: inline-block; margin-right: 0.5em; }
-/* line 102, ../sass/pages/profile.scss */
+/* line 92, ../sass/pages/profile.scss */
+#interests ul li { display: inline-block; margin-right: 0.5em; margin-bottom: 1.0em; }
+/* line 97, ../sass/pages/profile.scss */
 #interests ul li:last-child { margin-right: 0; }
-/* line 105, ../sass/pages/profile.scss */
+/* line 100, ../sass/pages/profile.scss */
 #interests ul li a { color: #0098cb; background-color: rgba(0, 152, 203, 0.1); }
 /* line 89, ../sass/partials/mixins.scss */
 #interests ul li a:hover { color: white; background-color: #0098cb; text-decoration: none; }
 
-/* line 118, ../sass/pages/profile.scss */
+/* line 113, ../sass/pages/profile.scss */
 #common ul { width: 100%; }
-/* line 122, ../sass/pages/profile.scss */
+/* line 117, ../sass/pages/profile.scss */
 #common ul li { padding-left: 10px; padding-right: 10px; width: 33%; }
-/* line 128, ../sass/pages/profile.scss */
+/* line 123, ../sass/pages/profile.scss */
 #common ul li .number-block { color: #0098cb; background-color: #f9fafb; border: 1px solid #e7edef; width: 100%; padding-top: 30px; padding-bottom: 30px; font-family: "Lato", "HelveticaNeue", "Helvetica", "Arial", sans-serif; font-weight: 100; font-size: 60px; }
-/* line 141, ../sass/pages/profile.scss */
+/* line 136, ../sass/pages/profile.scss */
 #common ul li .number-block-caption { margin-top: 5px; font-size: 14px; color: #b3b3b3; }
-/* line 149, ../sass/pages/profile.scss */
+/* line 144, ../sass/pages/profile.scss */
 #common ul li .icon { font-size: 16px; }
 
-/* line 157, ../sass/pages/profile.scss */
+/* line 152, ../sass/pages/profile.scss */
 #message { text-align: left; }
-/* line 161, ../sass/pages/profile.scss */
+/* line 156, ../sass/pages/profile.scss */
 #message h4 { padding-bottom: 20px; }
-
-/* line 173, ../sass/pages/profile.scss */
-.form-wrapper textarea { width: 100%; padding: 1em; border-radius: 8px; background-color: #f9fafb; border: 1px solid #e7edef; }
-/* line 183, ../sass/pages/profile.scss */
-.form-wrapper .message { display: block; width: 100%; padding-top: 0.5em; padding-bottom: 0.5em; font-size: 14px; }
-/* line 192, ../sass/pages/profile.scss */
-.form-wrapper .message.success { color: green; }
-/* line 197, ../sass/pages/profile.scss */
-.form-wrapper .message.error { color: red; }
-/* line 202, ../sass/pages/profile.scss */
-.form-wrapper .message .icon { font-size: 1.75em; }
-/* line 208, ../sass/pages/profile.scss */
-.form-wrapper .action { margin-top: 20px; display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; }
-/* line 39, ../sass/partials/mixins.scss */
-.form-wrapper .action .icon { font-size: 30px; }
-/* line 45, ../sass/partials/mixins.scss */
-.form-wrapper .action:hover { background-color: #0098cb; border: 1px solid #0098cb; color: white; }
-/* line 60, ../sass/partials/mixins.scss */
-.form-wrapper .action.inactive { color: #0098cb !important; background-color: rgba(0, 152, 203, 0.2) !important; border: 1px solid rgba(0, 152, 203, 0.2) !important; }

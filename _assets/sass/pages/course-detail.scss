@@ -1,13 +1,13 @@
 @import "../partials/_base";
 @import "../partials/top";
 @import "../partials/list";
+@import "../partials/calendar";
 
-
-section
+#calendar-wrapper
 {
-	padding-top: 40px;
-	padding-bottom: 40px;
-
-	&:first-child
-	{ padding-top: 0px; }
+	h4
+	{
+		color: $color-gray-dark;
+		margin-bottom: 10px;
+	}
 }

@@ -4,9 +4,11 @@
 
 	.block
 	{
+		$block-size: 214px;
+
 		display: inline-block;
-		width: 210px;
-		height: 210px;
+		width: $block-size;
+		height: $block-size;
 
 		margin-right: 10px;
 		margin-bottom: 10px;
