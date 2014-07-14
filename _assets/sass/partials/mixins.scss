@@ -1,10 +1,37 @@
 //
 
+@mixin square( $size, $rounded-corner-radius: 0px )
+{
+	width: $size;
+	height: $size;
+	border-radius: $rounded-corner-radius;
+}
+
+@mixin circle( $radius )
+{
+	width: $radius;
+	height: $radius;
+	border-radius: $radius;
+}
+
+//
+
 @mixin block-background
 {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center center;
+}
+
+
+//
+// Source http://stackoverflow.com/questions/17181849/placeholder-mixin-scss-css
+@mixin placeholder
+{
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
 }
 
 
@@ -64,9 +91,9 @@
 	}
 }
 
-@mixin button-small
+@mixin button-small( $background-color: $color-secondary, $text-color: white, $inverse: false )
 {
-	@include button;
+	@include button( $background-color, $text-color, $inverse );
 	font-size: 14px !important;
 	line-height: 1em;
 	padding: 0.5em 1em 0.75em 1em !important;

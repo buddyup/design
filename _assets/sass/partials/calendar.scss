@@ -1,5 +1,14 @@
 /*/  Custom Stuff /*/ 
 
+#calendar-wrapper
+{
+	h4
+	{
+		color: $color-gray-dark;
+		margin-bottom: 10px;
+	}
+}
+
 .calender-heading
 {
 	overflow: auto;
@@ -18,7 +27,8 @@
 	h4
 	{
 		font-size: 32px;
-		color: $color-blue-dull-dark;
+		color: $color-gray-dark;
+		margin-bottom: 10px;
 	}
 
 	a[data-calendar-nav="prev"], a[data-calendar-nav="next"]
@@ -52,11 +62,9 @@
 		margin-left: 10px;
 	}
 
-	a[data-calendar-nav='today']
+	a.action
 	{
-		float: right;
-		
-		@include button( $color-gray-medium, white, true );
+		@include button( $color-primary, white, true );
 	}
 }
 

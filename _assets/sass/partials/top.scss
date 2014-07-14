@@ -15,9 +15,61 @@
 		position: relative;
 	}
 
+	h1
+	{}
+
+	.subtitle
+	{
+		display: inline-block;
+		margin-top: 10px;
+
+		color: $color-text;
+		font-size: 14px;
+
+		span
+		{
+			margin-left: 0.75em;
+			margin-right: 0.75em;
+
+			&:first-child { margin-left: 0; }
+			&:last-child  { margin-right: 0; }
+
+			&.icon:before
+			{ 
+				font-size: 1.5em;
+				color: lighten( $color-text, 20% );
+			}
+
+			a
+			{
+				@include text-link;
+				color: $color-text;
+			}
+		}
+	}
+
 	a.action
 	{
 		display: inline-block;
+	}
+
+	.thumbnail
+	{
+		@include block-background;
+		width: $col;
+		height: $col;
+		border-radius: 0;
+
+		float:left;
+
+		margin-right: 40px;
+
+		border: 1px solid $color-text;
+
+		& + h1
+		{
+			font-size: 48px;
+		}
 	}
 
 }
@@ -55,59 +107,10 @@
 {
 	padding-bottom: 20px;
 
-	.thumbnail
-	{
-		@include block-background;
-		width: $col;
-		height: $col;
-		border-radius: 0;
-
-		float:left;
-
-		margin-right: 40px;
-
-		border: 1px solid $color-text;
-
-		& + h1
-		{
-			font-size: 48px;
-		}
-	}
-
 	h1
 	{
 		margin-top: 5px;
 		font-size: 46px;
-	}
-
-	.subtitle
-	{
-		display: inline-block;
-		margin-top: 10px;
-
-		color: $color-text;
-		font-size: 14px;
-
-		span
-		{
-			margin-left: 1em;
-			margin-right: 1em;
-
-			&:first-child { margin-left: 0; }
-			&:last-child  { margin-right: 0; }
-
-			&.icon:before
-			{ 
-				font-size: 1.5em;
-				color: lighten( $color-text, 20% );
-			}
-
-			a
-			{
-				@include text-link;
-				color: $color-text;
-			}
-		}
 	}
 
 	.action
@@ -127,9 +130,16 @@
 
 	h1
 	{
+		display: block;
+		// float: left;
+		// padding-bottom: 30px;
+	}
+
+	.subtitle
+	{
 		display: inline-block;
-		float: left;
-		padding-bottom: 30px;
+		// float: left;
+		// clear: right;
 	}
 
 	a.action
@@ -196,21 +206,29 @@
 
 	text-align: center;
 
+	div.profile-image, div.course-image
+	{
+		display: inline-block;
+		background-color: white;
+		border: 1px solid $color-border-lighter;
+	}
+
 	div.profile-image
 	{
+		@include circle( 180px );
 		@include block-background;
+	}
 
-		display: inline-block;
-
-		width: 180px;
-		height: 180px;
-		border-radius: 180px;
+	div.course-image
+	{
+		@include square( 150px, 5px );
+		@include block-background;
 	}
 
 	h1
 	{
 		padding-top: 20px;
-		padding-bottom: 10px;
+		padding-bottom: 5px;
 	}
 
 	.subtitle

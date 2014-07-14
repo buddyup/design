@@ -28,22 +28,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 @font-face { font-family: 'MyWebFont'; src: url("../fonts/entypo.woff") format("woff"), url("../fonts/entypo.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */ }
 
-/* line 76, ../sass/partials/mixins.scss */
+/* line 103, ../sass/partials/mixins.scss */
 .button.primary { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; }
-/* line 39, ../sass/partials/mixins.scss */
+/* line 66, ../sass/partials/mixins.scss */
 .button.primary .icon { font-size: 30px; }
-/* line 45, ../sass/partials/mixins.scss */
+/* line 72, ../sass/partials/mixins.scss */
 .button.primary:hover { background-color: transparent; color: #ffaa00; }
-/* line 60, ../sass/partials/mixins.scss */
+/* line 87, ../sass/partials/mixins.scss */
 .button.primary.inactive { color: #ffaa00 !important; background-color: rgba(255, 170, 0, 0.2) !important; border: 1px solid rgba(255, 170, 0, 0.2) !important; }
 
-/* line 81, ../sass/partials/mixins.scss */
+/* line 108, ../sass/partials/mixins.scss */
 .button.small { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
-/* line 39, ../sass/partials/mixins.scss */
+/* line 66, ../sass/partials/mixins.scss */
 .button.small .icon { font-size: 30px; }
-/* line 45, ../sass/partials/mixins.scss */
+/* line 72, ../sass/partials/mixins.scss */
 .button.small:hover { background-color: transparent; color: #ffaa00; }
-/* line 60, ../sass/partials/mixins.scss */
+/* line 87, ../sass/partials/mixins.scss */
 .button.small.inactive { color: #ffaa00 !important; background-color: rgba(255, 170, 0, 0.2) !important; border: 1px solid rgba(255, 170, 0, 0.2) !important; }
 
 /* line 3, ../sass/partials/icons.scss */
@@ -72,69 +72,78 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .icon.icon-note:before { content: '\1F4C4'; }
 
 /* line 33, ../sass/partials/icons.scss */
-.icon.icon-location:before { content: '\E724'; }
+.icon.icon-comment:before { content: '\E718'; }
 
 /* line 36, ../sass/partials/icons.scss */
-.icon.icon-down:before { content: '\E764'; }
+.icon.icon-location:before { content: '\E724'; }
 
 /* line 39, ../sass/partials/icons.scss */
-.icon.icon-checkmark:before { content: '\2713'; }
+.icon.icon-calendar:before { content: '\1F4C5'; }
 
 /* line 42, ../sass/partials/icons.scss */
-.icon.icon-error:before { content: '\26A0'; }
+.icon.icon-eye:before { content: '\E70A'; }
 
 /* line 45, ../sass/partials/icons.scss */
-.icon.icon-add:before { content: '\2295'; }
+.icon.icon-down:before { content: '\E764'; }
 
 /* line 48, ../sass/partials/icons.scss */
-.icon.icon-remove:before { content: '\2716'; }
+.icon.icon-checkmark:before { content: '\2713'; }
 
 /* line 51, ../sass/partials/icons.scss */
-.icon.icon-prev:before { content: '\E761'; }
+.icon.icon-error:before { content: '\26A0'; }
 
 /* line 54, ../sass/partials/icons.scss */
-.icon.icon-next:before { content: '\E762'; }
+.icon.icon-add:before { content: '\2295'; }
 
 /* line 57, ../sass/partials/icons.scss */
+.icon.icon-remove:before { content: '\2716'; }
+
+/* line 60, ../sass/partials/icons.scss */
+.icon.icon-prev:before { content: '\E761'; }
+
+/* line 63, ../sass/partials/icons.scss */
+.icon.icon-next:before { content: '\E762'; }
+
+/* line 66, ../sass/partials/icons.scss */
 .icon.icon-person-add { position: relative; display: inline-block; padding-right: 0.25em; }
 
-/* line 64, ../sass/partials/icons.scss */
+/* line 73, ../sass/partials/icons.scss */
 .icon.icon-person-add:before { content: '\1F464'; }
 
-/* line 67, ../sass/partials/icons.scss */
+/* line 76, ../sass/partials/icons.scss */
 .icon.icon-person-add:after { content: '\2795'; position: absolute; left: .45em; top: 0.1em; }
 
-/* line 75, ../sass/partials/icons.scss */
+/* line 84, ../sass/partials/icons.scss */
 .icon.icon-course-add { position: relative; display: inline-block; padding-right: 0.25em; }
 
-/* line 82, ../sass/partials/icons.scss */
+/* line 91, ../sass/partials/icons.scss */
 .icon.icon-course-add:before { content: '\1F4D5'; }
 
-/* line 85, ../sass/partials/icons.scss */
+/* line 94, ../sass/partials/icons.scss */
 .icon.icon-course-add:after { content: '\2795'; position: absolute; left: .45em; top: 0.1em; }
 
-/* line 93, ../sass/partials/icons.scss */
+/* line 102, ../sass/partials/icons.scss */
 .icon.icon-event-add { position: relative; display: inline-block; padding-right: 0.25em; }
 
-/* line 100, ../sass/partials/icons.scss */
+/* line 109, ../sass/partials/icons.scss */
 .icon.icon-event-add:before { content: '\1F554'; }
 
-/* line 103, ../sass/partials/icons.scss */
+/* line 112, ../sass/partials/icons.scss */
 .icon.icon-event-add:after { content: '\2795'; position: absolute; left: .75em; top: 0.05em; font-size: 0.75em; }
 
-/* line 112, ../sass/partials/icons.scss */
+/* line 121, ../sass/partials/icons.scss */
 .icon.icon-followed { display: inline-block; padding-right: 0.1em; }
 
-/* line 118, ../sass/partials/icons.scss */
+/* line 127, ../sass/partials/icons.scss */
 .icon.icon-followed:before { content: '\2713'; font-size: 1.1em; }
 
-/* line 121, ../sass/partials/icons.scss */
+/* line 130, ../sass/partials/icons.scss */
 .icon.icon-interest { position: relative; display: inline-block; padding-right: 0.25em; }
 
-/* line 128, ../sass/partials/icons.scss */
+/* line 137, ../sass/partials/icons.scss */
 .icon.icon-interest:before { position: absolute; content: '\25CF'; font-size: 2.2em; top: -0.25em; left: -0.25em; }
 
-/* line 137, ../sass/partials/icons.scss */
+/* line 146, ../sass/partials/icons.scss */
 .icon.icon-interest:after { content: '#'; position: absolute; left: -0.43em; top: 0.6em; font-size: 0.55em; color: white; }
 
 /* line 2, ../sass/partials/header.scss */
@@ -204,117 +213,125 @@ h1, h2, h3, h4, h5 { font-family: "Lato", "HelveticaNeue", "Helvetica", "Arial",
 h1 { font-size: 52px; }
 
 /* line 34, ../sass/partials/_base.scss */
-h3 { font-weight: 200; text-transform: uppercase; font-size: 18px; color: #999999; }
+h3, h3 a { font-weight: 200; text-transform: uppercase; font-size: 18px; color: #999999; }
+/* line 41, ../sass/partials/_base.scss */
+h3 a, h3 a a { text-decoration: none !important; }
 
-/* line 42, ../sass/partials/_base.scss */
+/* line 45, ../sass/partials/_base.scss */
 h4 { font-weight: 200; font-size: 18px; color: #999999; }
 
 /*/ /*/
-/* line 51, ../sass/partials/_base.scss */
+/* line 54, ../sass/partials/_base.scss */
 article#main-content { padding-top: 60px; padding-bottom: 100px; }
 
-/* line 57, ../sass/partials/_base.scss */
+/* line 60, ../sass/partials/_base.scss */
 article#main-content section { padding-top: 40px; padding-bottom: 40px; }
-/* line 62, ../sass/partials/_base.scss */
+/* line 65, ../sass/partials/_base.scss */
 article#main-content section:first-child { padding-top: 0px; }
 
 /*/ Special classes /*/
-/* line 68, ../sass/partials/_base.scss */
+/* line 71, ../sass/partials/_base.scss */
 .hide { display: none; }
 
-/* line 71, ../sass/partials/_base.scss */
+/* line 74, ../sass/partials/_base.scss */
 ul.horizontal { display: table; }
 
-/* line 74, ../sass/partials/_base.scss */
+/* line 77, ../sass/partials/_base.scss */
 ul.horizontal li { display: table-cell; }
 
-/* line 77, ../sass/partials/_base.scss */
+/* line 80, ../sass/partials/_base.scss */
 ul.bulleted { list-style-type: disc; padding-left: 1.25em; }
 
 /*/ Bootstrap overrides /*/
 /*/  Temp area  /*/
-/* line 94, ../sass/partials/_base.scss */
+/* line 97, ../sass/partials/_base.scss */
 .group-heading { overflow: auto; padding-bottom: 10px; margin-bottom: 20px; border-bottom: 1px solid #f3f6f7; }
-/* line 102, ../sass/partials/_base.scss */
+/* line 105, ../sass/partials/_base.scss */
 .group-heading h3 { float: left; }
-/* line 106, ../sass/partials/_base.scss */
+/* line 109, ../sass/partials/_base.scss */
 .group-heading h3 .icon { margin-right: 5px; font-size: 1.5em; line-height: 0em; }
-/* line 116, ../sass/partials/_base.scss */
+/* line 119, ../sass/partials/_base.scss */
 .group-heading a.right { color: #0098cb; float: right; font-size: 14px; }
-/* line 101, ../sass/partials/mixins.scss */
+/* line 128, ../sass/partials/mixins.scss */
 .group-heading a.right:hover { color: white; background-color: #0098cb; border-radius: 0px; text-decoration: none; }
 
 /* line 2, ../sass/partials/top.scss */
 #top { overflow: auto; padding-top: 40px; background-color: #f9fafb; border-top: 1px solid #f3f6f7; border-bottom: 1px solid #f3f6f7; color: #568da3; }
 /* line 13, ../sass/partials/top.scss */
 #top .wrapper { overflow: auto; position: relative; }
-/* line 19, ../sass/partials/top.scss */
+/* line 22, ../sass/partials/top.scss */
+#top .subtitle { display: inline-block; margin-top: 10px; color: #999999; font-size: 14px; }
+/* line 30, ../sass/partials/top.scss */
+#top .subtitle span { margin-left: 0.75em; margin-right: 0.75em; }
+/* line 34, ../sass/partials/top.scss */
+#top .subtitle span:first-child { margin-left: 0; }
+/* line 35, ../sass/partials/top.scss */
+#top .subtitle span:last-child { margin-right: 0; }
+/* line 38, ../sass/partials/top.scss */
+#top .subtitle span.icon:before { font-size: 1.5em; color: #cccccc; }
+/* line 44, ../sass/partials/top.scss */
+#top .subtitle span a { color: #0098cb; color: #999999; }
+/* line 128, ../sass/partials/mixins.scss */
+#top .subtitle span a:hover { color: white; background-color: #0098cb; border-radius: 0px; text-decoration: none; }
+/* line 52, ../sass/partials/top.scss */
 #top a.action { display: inline-block; }
+/* line 57, ../sass/partials/top.scss */
+#top .thumbnail { background-repeat: no-repeat; background-size: 100% auto; background-position: center center; width: 80px; height: 80px; border-radius: 0; float: left; margin-right: 40px; border: 1px solid #999999; }
+/* line 70, ../sass/partials/top.scss */
+#top .thumbnail + h1 { font-size: 48px; }
 
-/* line 26, ../sass/partials/top.scss */
+/* line 78, ../sass/partials/top.scss */
 #top.simple { padding-top: 60px; padding-bottom: 40px; }
-/* line 31, ../sass/partials/top.scss */
+/* line 83, ../sass/partials/top.scss */
 #top.simple h1 { margin-bottom: 20px; }
-/* line 36, ../sass/partials/top.scss */
+/* line 88, ../sass/partials/top.scss */
 #top.simple h1:only-child { margin-bottom: 0px; }
-/* line 41, ../sass/partials/top.scss */
+/* line 93, ../sass/partials/top.scss */
 #top.simple p { color: #999999; font-size: 18px; line-height: 1.5em; }
-/* line 48, ../sass/partials/top.scss */
+/* line 100, ../sass/partials/top.scss */
 #top.simple a.action { display: inline-block; margin-top: 30px; }
 
-/* line 55, ../sass/partials/top.scss */
+/* line 107, ../sass/partials/top.scss */
 #top.detail { padding-bottom: 20px; }
-/* line 59, ../sass/partials/top.scss */
-#top.detail .thumbnail { background-repeat: no-repeat; background-size: 100% auto; background-position: center center; width: 80px; height: 80px; border-radius: 0; float: left; margin-right: 40px; border: 1px solid #999999; }
-/* line 72, ../sass/partials/top.scss */
-#top.detail .thumbnail + h1 { font-size: 48px; }
-/* line 78, ../sass/partials/top.scss */
+/* line 111, ../sass/partials/top.scss */
 #top.detail h1 { margin-top: 5px; font-size: 46px; }
-/* line 84, ../sass/partials/top.scss */
-#top.detail .subtitle { display: inline-block; margin-top: 10px; color: #999999; font-size: 14px; }
-/* line 92, ../sass/partials/top.scss */
-#top.detail .subtitle span { margin-left: 1em; margin-right: 1em; }
-/* line 96, ../sass/partials/top.scss */
-#top.detail .subtitle span:first-child { margin-left: 0; }
-/* line 97, ../sass/partials/top.scss */
-#top.detail .subtitle span:last-child { margin-right: 0; }
-/* line 100, ../sass/partials/top.scss */
-#top.detail .subtitle span.icon:before { font-size: 1.5em; color: #cccccc; }
-/* line 106, ../sass/partials/top.scss */
-#top.detail .subtitle span a { color: #0098cb; color: #999999; }
-/* line 101, ../sass/partials/mixins.scss */
-#top.detail .subtitle span a:hover { color: white; background-color: #0098cb; border-radius: 0px; text-decoration: none; }
-/* line 114, ../sass/partials/top.scss */
+/* line 117, ../sass/partials/top.scss */
 #top.detail .action { margin-top: 5px; float: right; }
 
-/* line 123, ../sass/partials/top.scss */
+/* line 126, ../sass/partials/top.scss */
 #top.filter .col-md-12.col-md-offset-0 { padding-left: 40px; padding-right: 40px; }
-/* line 129, ../sass/partials/top.scss */
-#top.filter h1 { display: inline-block; float: left; padding-bottom: 30px; }
-/* line 136, ../sass/partials/top.scss */
+/* line 132, ../sass/partials/top.scss */
+#top.filter h1 { display: block; }
+/* line 139, ../sass/partials/top.scss */
+#top.filter .subtitle { display: inline-block; }
+/* line 146, ../sass/partials/top.scss */
 #top.filter a.action { float: right; }
-/* line 141, ../sass/partials/top.scss */
+/* line 151, ../sass/partials/top.scss */
 #top.filter ul.filter { display: table; width: 100%; margin-top: 20px; }
-/* line 147, ../sass/partials/top.scss */
+/* line 157, ../sass/partials/top.scss */
 #top.filter ul.filter li { display: table-cell; width: 1%; text-align: center; padding-left: 20px; padding-right: 20px; }
-/* line 156, ../sass/partials/top.scss */
+/* line 166, ../sass/partials/top.scss */
 #top.filter ul.filter li:first-child { text-align: left; padding-left: 0px; }
-/* line 162, ../sass/partials/top.scss */
+/* line 172, ../sass/partials/top.scss */
 #top.filter ul.filter li:last-child { width: auto; text-align: right; padding-left: 0px; padding-right: 0px; }
-/* line 170, ../sass/partials/top.scss */
+/* line 180, ../sass/partials/top.scss */
 #top.filter ul.filter li a { display: inline-block; padding-bottom: 10px; font-size: 14px; color: #88a7b2; text-decoration: none; }
-/* line 179, ../sass/partials/top.scss */
+/* line 189, ../sass/partials/top.scss */
 #top.filter ul.filter li a:hover { color: #ffaa00; }
-/* line 182, ../sass/partials/top.scss */
+/* line 192, ../sass/partials/top.scss */
 #top.filter ul.filter li a.selected { color: #568da3; font-weight: 400; border-bottom: 2px solid #ffaa00; }
 
-/* line 194, ../sass/partials/top.scss */
+/* line 204, ../sass/partials/top.scss */
 #top.profile { padding-bottom: 40px; text-align: center; }
-/* line 200, ../sass/partials/top.scss */
-#top.profile div.profile-image { background-repeat: no-repeat; background-size: 100% auto; background-position: center center; display: inline-block; width: 180px; height: 180px; border-radius: 180px; }
-/* line 211, ../sass/partials/top.scss */
-#top.profile h1 { padding-top: 20px; padding-bottom: 10px; }
+/* line 210, ../sass/partials/top.scss */
+#top.profile div.profile-image, #top.profile div.course-image { display: inline-block; background-color: white; border: 1px solid #f3f6f7; }
 /* line 217, ../sass/partials/top.scss */
+#top.profile div.profile-image { width: 180px; height: 180px; border-radius: 180px; background-repeat: no-repeat; background-size: 100% auto; background-position: center center; }
+/* line 223, ../sass/partials/top.scss */
+#top.profile div.course-image { width: 150px; height: 150px; border-radius: 5px; background-repeat: no-repeat; background-size: 100% auto; background-position: center center; }
+/* line 229, ../sass/partials/top.scss */
+#top.profile h1 { padding-top: 20px; padding-bottom: 5px; }
+/* line 235, ../sass/partials/top.scss */
 #top.profile .subtitle { padding-bottom: 30px; color: #999999; font-size: 16px; }
 
 /*/ Tablelists /*/
@@ -355,7 +372,7 @@ ul.tablelist-group li.tablelist-group-row ul.tablelist li.date .date { display: 
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.main { text-align: left; }
 /* line 131, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.main a { color: #0098cb; }
-/* line 101, ../sass/partials/mixins.scss */
+/* line 128, ../sass/partials/mixins.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.main a:hover { color: white; background-color: #0098cb; border-radius: 0px; text-decoration: none; }
 /* line 136, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .title { display: block; color: #191919; font-size: 16px; font-weight: 600; }
@@ -373,7 +390,7 @@ ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .subtitle span.ic
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.action { font-size: 14px; }
 /* line 173, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.action a { color: #0098cb; }
-/* line 101, ../sass/partials/mixins.scss */
+/* line 128, ../sass/partials/mixins.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.action a:hover { color: white; background-color: #0098cb; border-radius: 0px; text-decoration: none; }
 
 /* line 191, ../sass/partials/list.scss */
@@ -409,51 +426,60 @@ ul.block-list li a .block.overflow span { display: block; position: relative; to
 ul.block-list li a .block.overflow sup { font-size: .5em; }
 
 /*/  Custom Stuff /*/
-/* line 4, ../sass/partials/calendar.scss */
+/* line 6, ../sass/partials/calendar.scss */
+#calendar-wrapper h4 { color: #191919; margin-bottom: 10px; }
+
+/* line 13, ../sass/partials/calendar.scss */
 .calender-heading { overflow: auto; padding-top: 10px; padding-bottom: 30px; }
-/* line 10, ../sass/partials/calendar.scss */
-.calender-heading a, .calender-heading h4 { float: left; display: inline-block; }
 /* line 19, ../sass/partials/calendar.scss */
-.calender-heading h4 { font-size: 32px; color: #568da3; }
-/* line 25, ../sass/partials/calendar.scss */
+.calender-heading a, .calender-heading h4 { float: left; display: inline-block; }
+/* line 28, ../sass/partials/calendar.scss */
+.calender-heading h4 { font-size: 32px; color: #191919; margin-bottom: 10px; }
+/* line 35, ../sass/partials/calendar.scss */
 .calender-heading a[data-calendar-nav="prev"], .calender-heading a[data-calendar-nav="next"] { font-size: 42px; line-height: 0.65em; text-decoration: none; }
-/* line 31, ../sass/partials/calendar.scss */
+/* line 41, ../sass/partials/calendar.scss */
 .calender-heading a[data-calendar-nav="prev"] .icon, .calender-heading a[data-calendar-nav="next"] .icon { color: #0098cb; color: #999999; padding-left: 5px; padding-right: 5px; }
-/* line 101, ../sass/partials/mixins.scss */
+/* line 128, ../sass/partials/mixins.scss */
 .calender-heading a[data-calendar-nav="prev"] .icon:hover, .calender-heading a[data-calendar-nav="next"] .icon:hover { color: white; background-color: #0098cb; border-radius: 0px; text-decoration: none; }
-/* line 46, ../sass/partials/calendar.scss */
-.calender-heading a[data-calendar-nav="prev"] { margin-right: 10px; }
-/* line 51, ../sass/partials/calendar.scss */
-.calender-heading a[data-calendar-nav="next"] { margin-left: 10px; }
 /* line 56, ../sass/partials/calendar.scss */
-.calender-heading a[data-calendar-nav='today'] { float: right; display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #999999; background-color: white; border: 1px solid #999999; }
-/* line 39, ../sass/partials/mixins.scss */
-.calender-heading a[data-calendar-nav='today'] .icon { font-size: 30px; }
-/* line 45, ../sass/partials/mixins.scss */
-.calender-heading a[data-calendar-nav='today']:hover { background-color: #999999; border: 1px solid #999999; color: white; }
-/* line 60, ../sass/partials/mixins.scss */
-.calender-heading a[data-calendar-nav='today'].inactive { color: #999999 !important; background-color: rgba(153, 153, 153, 0.2) !important; border: 1px solid rgba(153, 153, 153, 0.2) !important; }
+.calender-heading a[data-calendar-nav="prev"] { margin-right: 10px; }
+/* line 61, ../sass/partials/calendar.scss */
+.calender-heading a[data-calendar-nav="next"] { margin-left: 10px; }
+/* line 66, ../sass/partials/calendar.scss */
+.calender-heading a.action { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; }
+/* line 66, ../sass/partials/mixins.scss */
+.calender-heading a.action .icon { font-size: 30px; }
+/* line 72, ../sass/partials/mixins.scss */
+.calender-heading a.action:hover { background-color: #0098cb; border: 1px solid #0098cb; color: white; }
+/* line 87, ../sass/partials/mixins.scss */
+.calender-heading a.action.inactive { color: #0098cb !important; background-color: rgba(0, 152, 203, 0.2) !important; border: 1px solid rgba(0, 152, 203, 0.2) !important; }
 
 /*/  Calendar Overrides /*/
 /*/  Month Boxes /*/
-/* line 71, ../sass/partials/calendar.scss */
+/* line 79, ../sass/partials/calendar.scss */
 .cal-row-head .cal-cell1 { margin-bottom: 5px; background: white; font-size: 12px; font-weight: 100; color: #88a7b2; }
 
-/* line 83, ../sass/partials/calendar.scss */
+/* line 91, ../sass/partials/calendar.scss */
 .cal-row-fluid, .cal-cell, .cal-month-box { border-color: #f3f6f7 !important; }
 
-/* line 93, ../sass/partials/calendar.scss */
+/* line 101, ../sass/partials/calendar.scss */
 .cal-month-day, .cal-day-outmonth, .cal-day-weekend { font-size: 12px; font-weight: 100; }
 
-/* line 101, ../sass/partials/calendar.scss */
+/* line 109, ../sass/partials/calendar.scss */
 .cal-month-day span, .cal-day-weekend span { color: #568da3 !important; }
 
-/* line 107, ../sass/partials/calendar.scss */
+/* line 115, ../sass/partials/calendar.scss */
 .cal-day-outmonth span { color: #191919 !important; }
 
 /*/  Events /*/
-/* line 113, ../sass/partials/calendar.scss */
+/* line 121, ../sass/partials/calendar.scss */
 .event { border: none !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
 
-/* line 9, ../sass/pages/course-detail.scss */
-#calendar-wrapper h4 { color: #191919; margin-bottom: 10px; }
+/* line 15, ../sass/pages/course-detail.scss */
+#calendar-wrapper a.action { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; float: left; margin-left: 30px; }
+/* line 66, ../sass/partials/mixins.scss */
+#calendar-wrapper a.action .icon { font-size: 30px; }
+/* line 72, ../sass/partials/mixins.scss */
+#calendar-wrapper a.action:hover { background-color: #0098cb; border: 1px solid #0098cb; color: white; }
+/* line 87, ../sass/partials/mixins.scss */
+#calendar-wrapper a.action.inactive { color: #0098cb !important; background-color: rgba(0, 152, 203, 0.2) !important; border: 1px solid rgba(0, 152, 203, 0.2) !important; }
