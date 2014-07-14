@@ -300,38 +300,40 @@ ul.bulleted { list-style-type: disc; padding-left: 1.25em; }
 
 /* line 126, ../sass/partials/top.scss */
 #top.filter .col-md-12.col-md-offset-0 { padding-left: 40px; padding-right: 40px; }
-/* line 132, ../sass/partials/top.scss */
+/* line 131, ../sass/partials/top.scss */
+#top.filter .col-md-12.col-md-offset-0:first-child { padding-bottom: 30px; }
+/* line 137, ../sass/partials/top.scss */
 #top.filter h1 { display: block; }
-/* line 139, ../sass/partials/top.scss */
+/* line 143, ../sass/partials/top.scss */
 #top.filter .subtitle { display: inline-block; }
-/* line 146, ../sass/partials/top.scss */
-#top.filter a.action { float: right; }
-/* line 151, ../sass/partials/top.scss */
+/* line 150, ../sass/partials/top.scss */
+#top.filter a.action { margin-top: 20px; float: right; }
+/* line 156, ../sass/partials/top.scss */
 #top.filter ul.filter { display: table; width: 100%; margin-top: 20px; }
-/* line 157, ../sass/partials/top.scss */
+/* line 162, ../sass/partials/top.scss */
 #top.filter ul.filter li { display: table-cell; width: 1%; text-align: center; padding-left: 20px; padding-right: 20px; }
-/* line 166, ../sass/partials/top.scss */
+/* line 171, ../sass/partials/top.scss */
 #top.filter ul.filter li:first-child { text-align: left; padding-left: 0px; }
-/* line 172, ../sass/partials/top.scss */
+/* line 177, ../sass/partials/top.scss */
 #top.filter ul.filter li:last-child { width: auto; text-align: right; padding-left: 0px; padding-right: 0px; }
-/* line 180, ../sass/partials/top.scss */
+/* line 185, ../sass/partials/top.scss */
 #top.filter ul.filter li a { display: inline-block; padding-bottom: 10px; font-size: 14px; color: #88a7b2; text-decoration: none; }
-/* line 189, ../sass/partials/top.scss */
+/* line 194, ../sass/partials/top.scss */
 #top.filter ul.filter li a:hover { color: #ffaa00; }
-/* line 192, ../sass/partials/top.scss */
+/* line 197, ../sass/partials/top.scss */
 #top.filter ul.filter li a.selected { color: #568da3; font-weight: 400; border-bottom: 2px solid #ffaa00; }
 
-/* line 204, ../sass/partials/top.scss */
+/* line 209, ../sass/partials/top.scss */
 #top.profile { padding-bottom: 40px; text-align: center; }
-/* line 210, ../sass/partials/top.scss */
+/* line 215, ../sass/partials/top.scss */
 #top.profile div.profile-image, #top.profile div.course-image { display: inline-block; background-color: white; border: 1px solid #f3f6f7; }
-/* line 217, ../sass/partials/top.scss */
+/* line 222, ../sass/partials/top.scss */
 #top.profile div.profile-image { width: 180px; height: 180px; border-radius: 180px; background-repeat: no-repeat; background-size: 100% auto; background-position: center center; }
-/* line 223, ../sass/partials/top.scss */
+/* line 228, ../sass/partials/top.scss */
 #top.profile div.course-image { width: 150px; height: 150px; border-radius: 5px; background-repeat: no-repeat; background-size: 100% auto; background-position: center center; }
-/* line 229, ../sass/partials/top.scss */
+/* line 234, ../sass/partials/top.scss */
 #top.profile h1 { padding-top: 20px; padding-bottom: 5px; }
-/* line 235, ../sass/partials/top.scss */
+/* line 240, ../sass/partials/top.scss */
 #top.profile .subtitle { padding-bottom: 30px; color: #999999; font-size: 16px; }
 
 /* line 2, ../sass/partials/block-grid.scss */

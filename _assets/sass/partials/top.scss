@@ -126,13 +126,17 @@
 	{
 		padding-left: $col / 2;
 		padding-right: $col / 2;
+
+		&:first-child
+		{
+			padding-bottom: 30px;
+		}
 	}
 
 	h1
 	{
 		display: block;
 		// float: left;
-		// padding-bottom: 30px;
 	}
 
 	.subtitle
@@ -144,6 +148,7 @@
 
 	a.action
 	{
+		margin-top: 20px;
 		float: right;
 	}
 
