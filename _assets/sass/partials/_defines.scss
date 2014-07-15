@@ -6,11 +6,38 @@ $col: $container-width / $col-amount;
 
 $space: 10px;
 
+/// Media Queries
+
+// Roughly the sizes of breakpoints in Bootstrap
+$mq-xs : "max-width:767px";
+$mq-sm : "min-width:768px";
+$mq-md : "min-width:992px";
+$mq-lg : "min-width:1200px";
+
+
+@mixin respond-to-size-xs{ @media only screen and ( $mq-xs ) { @content; } }
+@mixin respond-to-size-sm{ @media only screen and ( $mq-sm ) { @content; } }
+@mixin respond-to-size-md{ @media only screen and ( $mq-md ) { @content; } }
+@mixin respond-to-size-lg{ @media only screen and ( $mq-lg ) { @content; } }
+
+
+@mixin respond-to-size-above( $size ) {
+    @media only screen and ( min-width:($size+1) ) { @content; }
+}
+
+@mixin respond-to-size-below( $size ) {
+    @media only screen and ( max-width:($size) ) { @content; }
+}
+
+@mixin respond-to-size-between( $min-size, $max-size ) {
+    @media only screen and (min-width:$min-size) and ( max-width: $max-size ) { @content; }
+}
+
 
 // Fonts
 
 @font-face {
-  font-family: 'MyWebFont';
+  font-family: 'Entypo';
   src: url('../fonts/entypo.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
        url('../fonts/entypo.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }

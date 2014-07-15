@@ -1,4 +1,18 @@
 
+/*/ Generic List /*/
+
+.list
+{
+	display: block;
+
+	li
+	{
+		display: block;
+		width: 100%;
+	}
+}
+
+
 /*/ Tablelists /*/
 
 .group-heading + ul.tablelist-group
@@ -13,6 +27,7 @@ ul.tablelist-group
 
 	li.tablelist-group-row
 	{
+		display: block;
 
 		ul.tablelist
 		{

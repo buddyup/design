@@ -84,3 +84,12 @@ section#info
 	.availability
 	{}
 }
+
+#attendants
+{
+	ul.block-list + a
+	{
+		margin-top: 10px;
+		@include button-small( $color-primary, white, true );
+	}
+}

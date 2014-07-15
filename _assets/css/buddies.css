@@ -26,11 +26,11 @@ a img { border: none; }
 /* line 116, ../../../../../../../../../Users/azeven/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-@font-face { font-family: 'MyWebFont'; src: url("../fonts/entypo.woff") format("woff"), url("../fonts/entypo.ttf") format("truetype");
+@font-face { font-family: 'Entypo'; src: url("../fonts/entypo.woff") format("woff"), url("../fonts/entypo.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */ }
 
 /* line 103, ../sass/partials/mixins.scss */
-.button.primary { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; }
+.button.primary { display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; }
 /* line 66, ../sass/partials/mixins.scss */
 .button.primary .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
@@ -39,7 +39,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .button.primary.inactive { color: #ffaa00 !important; background-color: rgba(255, 170, 0, 0.2) !important; border: 1px solid rgba(255, 170, 0, 0.2) !important; }
 
 /* line 108, ../sass/partials/mixins.scss */
-.button.small { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
+.button.small { display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
 /* line 66, ../sass/partials/mixins.scss */
 .button.small .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
@@ -155,45 +155,65 @@ nav { display: table; padding: 0; }
 /* line 14, ../sass/partials/header.scss */
 nav > div { display: table-cell; vertical-align: middle; }
 /* line 20, ../sass/partials/header.scss */
-nav a { display: inline-block; padding-bottom: 20px; padding-top: 20px; color: #568da3; }
+nav a { display: inline-block; padding-bottom: 20px; padding-top: 20px; color: #568da3 !important; text-decoration: none !important; }
 /* line 29, ../sass/partials/header.scss */
 nav a:hover { color: #ffaa00; text-decoration: none; }
 /* line 36, ../sass/partials/header.scss */
 nav ul { padding-left: 0; display: table; }
 /* line 41, ../sass/partials/header.scss */
 nav ul li { display: table-cell; vertical-align: middle; }
-/* line 50, ../sass/partials/header.scss */
-nav .button:hover, nav .button.selected { -webkit-box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); -moz-box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); }
+/* line 51, ../sass/partials/header.scss */
+nav .button:hover, nav .button:active, nav .button.selected, nav .dropdown.open .button { -webkit-box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); -moz-box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); }
 
-/* line 61, ../sass/partials/header.scss */
-nav div.main a { font-family: "Lato", "HelveticaNeue", "Helvetica", "Arial", sans-serif; font-weight: 900; font-size: 16px; text-transform: uppercase; }
-/* line 71, ../sass/partials/header.scss */
-nav div.main ul li { text-align: center; width: 160px; }
+/* line 62, ../sass/partials/header.scss */
+.dropdown-menu { margin-top: -2px; padding: 0; border-radius: 0; border: 1px solid #f3f6f7; -webkit-box-shadow: 0px 2px 3px 0px rgba(86, 141, 163, 0.1); -moz-box-shadow: 0px 2px 3px 0px rgba(86, 141, 163, 0.1); box-shadow: 0px 2px 3px 0px rgba(86, 141, 163, 0.1); }
+/* line 73, ../sass/partials/header.scss */
+.dropdown-menu .tablelist li:first-child { padding-left: 5px; }
 /* line 76, ../sass/partials/header.scss */
+.dropdown-menu .tablelist li:last-child { padding-right: 5px; }
+
+/* line 85, ../sass/partials/header.scss */
+nav div.main a { font-family: "Lato", "HelveticaNeue", "Helvetica", "Arial", sans-serif; font-weight: 900; font-size: 16px; text-transform: uppercase; }
+/* line 95, ../sass/partials/header.scss */
+nav div.main ul li { text-align: center; width: 160px; }
+/* line 100, ../sass/partials/header.scss */
 nav div.main ul li.logo { width: 80px; }
-/* line 80, ../sass/partials/header.scss */
+/* line 104, ../sass/partials/header.scss */
 nav div.main ul li.logo a { padding: 0; }
 
-/* line 91, ../sass/partials/header.scss */
-nav div.notifications { width: 100px; text-align: center; border-left: 1px solid #f3f6f7; border-right: 1px solid #f3f6f7; }
-/* line 99, ../sass/partials/header.scss */
-nav div.notifications .button { position: relative; width: 100%; }
-/* line 106, ../sass/partials/header.scss */
-nav div.notifications .button:before { content: '\2709'; position: relative; left: 5px; font-size: 56px; font-family: "Entypo"; }
-/* line 117, ../sass/partials/header.scss */
-nav div.notifications .button span.badging { position: absolute; margin-top: 5px; width: 20px; height: 20px; background: #ffaa00; border-radius: 20px; font-size: 12px; line-height: 22px; font-weight: 400; color: white; }
+@media only screen and (max-width: 767px) { /* line 117, ../sass/partials/header.scss */
+  nav { position: fixed; width: 100%; }
+  /* line 122, ../sass/partials/header.scss */
+  nav div.main-mobile { position: absolute; top: 0; left: 0; }
+  /* line 129, ../sass/partials/header.scss */
+  nav div.notifications { position: absolute; top: 0; right: 0; }
+  /* line 136, ../sass/partials/header.scss */
+  nav .dropdown-menu { width: 100% !important; border: 1px solid red; } }
+/* line 146, ../sass/partials/header.scss */
+nav div.main-mobile a[data-toggle="dropdown"] { width: 120px; text-align: center; border-right: 1px solid #f3f6f7; }
 
-/* line 138, ../sass/partials/header.scss */
+/* line 158, ../sass/partials/header.scss */
+nav div.notifications { width: 100px; text-align: center; border-left: 1px solid #f3f6f7; border-right: 1px solid #f3f6f7; }
+/* line 166, ../sass/partials/header.scss */
+nav div.notifications .button { position: relative; width: 100%; }
+/* line 173, ../sass/partials/header.scss */
+nav div.notifications .button:before { content: '\2709'; position: relative; left: 5px; font-size: 56px; font-family: "Entypo"; }
+/* line 184, ../sass/partials/header.scss */
+nav div.notifications .button span.badging { position: absolute; margin-top: 5px; width: 20px; height: 20px; background: #ffaa00; border-radius: 20px; font-size: 12px; line-height: 22px; font-weight: 400; color: white; }
+/* line 205, ../sass/partials/header.scss */
+nav div.notifications .dropdown-menu ul.tablelist-group { width: 320px; }
+
+/* line 214, ../sass/partials/header.scss */
 nav div.overflow { width: 220px; border-right: 1px solid #f3f6f7; }
-/* line 144, ../sass/partials/header.scss */
+/* line 220, ../sass/partials/header.scss */
 nav div.overflow .button { position: relative; width: 100%; padding-left: 20px; padding-right: 20px; }
-/* line 155, ../sass/partials/header.scss */
+/* line 231, ../sass/partials/header.scss */
 nav div.overflow .button .img { display: inline-block; width: 45px; height: 45px; border-radius: 45px; background-repeat: no-repeat; background-position: center center; background-size: 100% auto; }
-/* line 170, ../sass/partials/header.scss */
+/* line 246, ../sass/partials/header.scss */
 nav div.overflow .button .name { position: relative; top: 1em; left: 5px; display: inline-block; width: 110px; text-overflow: ellipsis; overflow: hidden; font-size: 12px; text-align: left; }
-/* line 186, ../sass/partials/header.scss */
+/* line 262, ../sass/partials/header.scss */
 nav div.overflow .button:before { content: '\25BE'; position: absolute; right: 20px; padding-top: 5px; font-family: "Entypo"; font-size: 36px; color: #88a7b2; }
-/* line 200, ../sass/partials/header.scss */
+/* line 276, ../sass/partials/header.scss */
 nav div.overflow .button:hover:before { color: #ffaa00; }
 
 /* line 2, ../sass/partials/footer.scss */
@@ -283,7 +303,7 @@ ul.bulleted { list-style-type: disc; padding-left: 1.25em; }
 /* line 106, ../sass/partials/block-grid.scss */
 .block-grid .block.selected .info .wrapper > span.subtitle .icon, .block-grid .block:hover .info .wrapper > span.subtitle .icon { font-size: 22px !important; }
 /* line 110, ../sass/partials/block-grid.scss */
-.block-grid .block.selected .info .wrapper > span.button, .block-grid .block:hover .info .wrapper > span.button { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid white; position: absolute; bottom: 20px; left: 20%; width: 60%; padding: 0.35em 1em 0.5em 1em !important; }
+.block-grid .block.selected .info .wrapper > span.button, .block-grid .block:hover .info .wrapper > span.button { display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid white; position: absolute; bottom: 20px; left: 20%; width: 60%; padding: 0.35em 1em 0.5em 1em !important; }
 /* line 66, ../sass/partials/mixins.scss */
 .block-grid .block.selected .info .wrapper > span.button .icon, .block-grid .block:hover .info .wrapper > span.button .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */

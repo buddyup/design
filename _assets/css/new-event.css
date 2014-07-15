@@ -25,11 +25,11 @@ a img { border: none; }
 /* line 116, ../../../../../../../../../Users/azeven/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-@font-face { font-family: 'MyWebFont'; src: url("../fonts/entypo.woff") format("woff"), url("../fonts/entypo.ttf") format("truetype");
+@font-face { font-family: 'Entypo'; src: url("../fonts/entypo.woff") format("woff"), url("../fonts/entypo.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */ }
 
 /* line 103, ../sass/partials/mixins.scss */
-.button.primary { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; }
+.button.primary { display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; }
 /* line 66, ../sass/partials/mixins.scss */
 .button.primary .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
@@ -38,7 +38,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .button.primary.inactive { color: #ffaa00 !important; background-color: rgba(255, 170, 0, 0.2) !important; border: 1px solid rgba(255, 170, 0, 0.2) !important; }
 
 /* line 108, ../sass/partials/mixins.scss */
-.button.small { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
+.button.small { display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
 /* line 66, ../sass/partials/mixins.scss */
 .button.small .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
@@ -154,45 +154,65 @@ nav { display: table; padding: 0; }
 /* line 14, ../sass/partials/header.scss */
 nav > div { display: table-cell; vertical-align: middle; }
 /* line 20, ../sass/partials/header.scss */
-nav a { display: inline-block; padding-bottom: 20px; padding-top: 20px; color: #568da3; }
+nav a { display: inline-block; padding-bottom: 20px; padding-top: 20px; color: #568da3 !important; text-decoration: none !important; }
 /* line 29, ../sass/partials/header.scss */
 nav a:hover { color: #ffaa00; text-decoration: none; }
 /* line 36, ../sass/partials/header.scss */
 nav ul { padding-left: 0; display: table; }
 /* line 41, ../sass/partials/header.scss */
 nav ul li { display: table-cell; vertical-align: middle; }
-/* line 50, ../sass/partials/header.scss */
-nav .button:hover, nav .button.selected { -webkit-box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); -moz-box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); }
+/* line 51, ../sass/partials/header.scss */
+nav .button:hover, nav .button:active, nav .button.selected, nav .dropdown.open .button { -webkit-box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); -moz-box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); box-shadow: 0px 1px 2px 3px rgba(86, 141, 163, 0.1); }
 
-/* line 61, ../sass/partials/header.scss */
-nav div.main a { font-family: "Lato", "HelveticaNeue", "Helvetica", "Arial", sans-serif; font-weight: 900; font-size: 16px; text-transform: uppercase; }
-/* line 71, ../sass/partials/header.scss */
-nav div.main ul li { text-align: center; width: 160px; }
+/* line 62, ../sass/partials/header.scss */
+.dropdown-menu { margin-top: -2px; padding: 0; border-radius: 0; border: 1px solid #f3f6f7; -webkit-box-shadow: 0px 2px 3px 0px rgba(86, 141, 163, 0.1); -moz-box-shadow: 0px 2px 3px 0px rgba(86, 141, 163, 0.1); box-shadow: 0px 2px 3px 0px rgba(86, 141, 163, 0.1); }
+/* line 73, ../sass/partials/header.scss */
+.dropdown-menu .tablelist li:first-child { padding-left: 5px; }
 /* line 76, ../sass/partials/header.scss */
+.dropdown-menu .tablelist li:last-child { padding-right: 5px; }
+
+/* line 85, ../sass/partials/header.scss */
+nav div.main a { font-family: "Lato", "HelveticaNeue", "Helvetica", "Arial", sans-serif; font-weight: 900; font-size: 16px; text-transform: uppercase; }
+/* line 95, ../sass/partials/header.scss */
+nav div.main ul li { text-align: center; width: 160px; }
+/* line 100, ../sass/partials/header.scss */
 nav div.main ul li.logo { width: 80px; }
-/* line 80, ../sass/partials/header.scss */
+/* line 104, ../sass/partials/header.scss */
 nav div.main ul li.logo a { padding: 0; }
 
-/* line 91, ../sass/partials/header.scss */
-nav div.notifications { width: 100px; text-align: center; border-left: 1px solid #f3f6f7; border-right: 1px solid #f3f6f7; }
-/* line 99, ../sass/partials/header.scss */
-nav div.notifications .button { position: relative; width: 100%; }
-/* line 106, ../sass/partials/header.scss */
-nav div.notifications .button:before { content: '\2709'; position: relative; left: 5px; font-size: 56px; font-family: "Entypo"; }
-/* line 117, ../sass/partials/header.scss */
-nav div.notifications .button span.badging { position: absolute; margin-top: 5px; width: 20px; height: 20px; background: #ffaa00; border-radius: 20px; font-size: 12px; line-height: 22px; font-weight: 400; color: white; }
+@media only screen and (max-width: 767px) { /* line 117, ../sass/partials/header.scss */
+  nav { position: fixed; width: 100%; }
+  /* line 122, ../sass/partials/header.scss */
+  nav div.main-mobile { position: absolute; top: 0; left: 0; }
+  /* line 129, ../sass/partials/header.scss */
+  nav div.notifications { position: absolute; top: 0; right: 0; }
+  /* line 136, ../sass/partials/header.scss */
+  nav .dropdown-menu { width: 100% !important; border: 1px solid red; } }
+/* line 146, ../sass/partials/header.scss */
+nav div.main-mobile a[data-toggle="dropdown"] { width: 120px; text-align: center; border-right: 1px solid #f3f6f7; }
 
-/* line 138, ../sass/partials/header.scss */
+/* line 158, ../sass/partials/header.scss */
+nav div.notifications { width: 100px; text-align: center; border-left: 1px solid #f3f6f7; border-right: 1px solid #f3f6f7; }
+/* line 166, ../sass/partials/header.scss */
+nav div.notifications .button { position: relative; width: 100%; }
+/* line 173, ../sass/partials/header.scss */
+nav div.notifications .button:before { content: '\2709'; position: relative; left: 5px; font-size: 56px; font-family: "Entypo"; }
+/* line 184, ../sass/partials/header.scss */
+nav div.notifications .button span.badging { position: absolute; margin-top: 5px; width: 20px; height: 20px; background: #ffaa00; border-radius: 20px; font-size: 12px; line-height: 22px; font-weight: 400; color: white; }
+/* line 205, ../sass/partials/header.scss */
+nav div.notifications .dropdown-menu ul.tablelist-group { width: 320px; }
+
+/* line 214, ../sass/partials/header.scss */
 nav div.overflow { width: 220px; border-right: 1px solid #f3f6f7; }
-/* line 144, ../sass/partials/header.scss */
+/* line 220, ../sass/partials/header.scss */
 nav div.overflow .button { position: relative; width: 100%; padding-left: 20px; padding-right: 20px; }
-/* line 155, ../sass/partials/header.scss */
+/* line 231, ../sass/partials/header.scss */
 nav div.overflow .button .img { display: inline-block; width: 45px; height: 45px; border-radius: 45px; background-repeat: no-repeat; background-position: center center; background-size: 100% auto; }
-/* line 170, ../sass/partials/header.scss */
+/* line 246, ../sass/partials/header.scss */
 nav div.overflow .button .name { position: relative; top: 1em; left: 5px; display: inline-block; width: 110px; text-overflow: ellipsis; overflow: hidden; font-size: 12px; text-align: left; }
-/* line 186, ../sass/partials/header.scss */
+/* line 262, ../sass/partials/header.scss */
 nav div.overflow .button:before { content: '\25BE'; position: absolute; right: 20px; padding-top: 5px; font-family: "Entypo"; font-size: 36px; color: #88a7b2; }
-/* line 200, ../sass/partials/header.scss */
+/* line 276, ../sass/partials/header.scss */
 nav div.overflow .button:hover:before { color: #ffaa00; }
 
 /* line 2, ../sass/partials/footer.scss */
@@ -282,7 +302,7 @@ ul.bulleted { list-style-type: disc; padding-left: 1.25em; }
 /* line 106, ../sass/partials/block-grid.scss */
 .block-grid .block.selected .info .wrapper > span.subtitle .icon, .block-grid .block:hover .info .wrapper > span.subtitle .icon { font-size: 22px !important; }
 /* line 110, ../sass/partials/block-grid.scss */
-.block-grid .block.selected .info .wrapper > span.button, .block-grid .block:hover .info .wrapper > span.button { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid white; position: absolute; bottom: 20px; left: 20%; width: 60%; padding: 0.35em 1em 0.5em 1em !important; }
+.block-grid .block.selected .info .wrapper > span.button, .block-grid .block:hover .info .wrapper > span.button { display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid white; position: absolute; bottom: 20px; left: 20%; width: 60%; padding: 0.35em 1em 0.5em 1em !important; }
 /* line 66, ../sass/partials/mixins.scss */
 .block-grid .block.selected .info .wrapper > span.button .icon, .block-grid .block:hover .info .wrapper > span.button .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
@@ -373,95 +393,103 @@ ul.bulleted { list-style-type: disc; padding-left: 1.25em; }
 /* line 240, ../sass/partials/top.scss */
 #top.profile .subtitle { padding-bottom: 30px; color: #999999; font-size: 16px; }
 
-/*/ Tablelists /*/
+/*/ Generic List /*/
 /* line 5, ../sass/partials/list.scss */
+.list { display: block; }
+/* line 9, ../sass/partials/list.scss */
+.list li { display: block; width: 100%; }
+
+/*/ Tablelists /*/
+/* line 19, ../sass/partials/list.scss */
 .group-heading + ul.tablelist-group { border-top: none; margin-top: -20px; }
 
-/* line 11, ../sass/partials/list.scss */
+/* line 25, ../sass/partials/list.scss */
 ul.tablelist-group { border-top: 1px solid #f3f6f7; }
-/* line 18, ../sass/partials/list.scss */
+/* line 29, ../sass/partials/list.scss */
+ul.tablelist-group li.tablelist-group-row { display: block; }
+/* line 33, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist { display: table; width: 100%; }
-/* line 23, ../sass/partials/list.scss */
+/* line 38, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist:hover { background: #f9fafb; }
-/* line 28, ../sass/partials/list.scss */
+/* line 43, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li { display: table-cell; text-align: center; vertical-align: middle; padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #f3f6f7; font-size: 12px; }
-/* line 40, ../sass/partials/list.scss */
+/* line 55, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li:first-child { text-align: left; padding-left: 10px; }
-/* line 46, ../sass/partials/list.scss */
-ul.tablelist-group li.tablelist-group-row ul.tablelist li:last-child { text-align: right; padding-right: 10px; }
-/* line 52, ../sass/partials/list.scss */
-ul.tablelist-group li.tablelist-group-row ul.tablelist li.icon { width: 45px; text-align: center !important; padding-right: 20px; line-height: 0; }
 /* line 61, ../sass/partials/list.scss */
+ul.tablelist-group li.tablelist-group-row ul.tablelist li:last-child { text-align: right; padding-right: 10px; }
+/* line 67, ../sass/partials/list.scss */
+ul.tablelist-group li.tablelist-group-row ul.tablelist li.icon { width: 45px; text-align: center !important; padding-right: 20px; line-height: 0; }
+/* line 76, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.icon a { text-decoration: none; }
-/* line 64, ../sass/partials/list.scss */
+/* line 79, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.icon .icon-file { position: relative; }
-/* line 68, ../sass/partials/list.scss */
+/* line 83, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.icon .icon-file:before { content: ' '; display: inline-block; width: 40px; height: 40px; border-radius: 3px; background: #f3f6f7; border: 1px solid #e7edef; }
-/* line 80, ../sass/partials/list.scss */
+/* line 95, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.icon .icon-file:after { content: '\1F4C4'; position: absolute; top: -0.15em; left: 0.275em; line-height: 0; font-family: "Entypo"; font-size: 40px; }
-/* line 94, ../sass/partials/list.scss */
-ul.tablelist-group li.tablelist-group-row ul.tablelist li.icon .block { background-repeat: no-repeat; background-size: 100% auto; background-position: center center; display: inline-block; width: 45px; height: 45px; }
-/* line 102, ../sass/partials/list.scss */
-ul.tablelist-group li.tablelist-group-row ul.tablelist li.icon .block.circle { border-radius: 45px; }
 /* line 109, ../sass/partials/list.scss */
+ul.tablelist-group li.tablelist-group-row ul.tablelist li.icon .block { background-repeat: no-repeat; background-size: 100% auto; background-position: center center; display: inline-block; width: 45px; height: 45px; }
+/* line 117, ../sass/partials/list.scss */
+ul.tablelist-group li.tablelist-group-row ul.tablelist li.icon .block.circle { border-radius: 45px; }
+/* line 124, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.date { width: 7em; }
-/* line 113, ../sass/partials/list.scss */
+/* line 128, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.date .date { display: block; font-weight: 400; text-transform: uppercase; color: #191919; margin-bottom: 5px; }
-/* line 127, ../sass/partials/list.scss */
+/* line 142, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.main { text-align: left; }
-/* line 131, ../sass/partials/list.scss */
+/* line 146, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.main a { color: #0098cb; }
 /* line 128, ../sass/partials/mixins.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.main a:hover { color: white; background-color: #0098cb; border-radius: 0px; text-decoration: none; }
-/* line 136, ../sass/partials/list.scss */
+/* line 151, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .title { display: block; color: #191919; font-size: 16px; font-weight: 600; }
-/* line 145, ../sass/partials/list.scss */
-ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .subtitle { display: block; margin-top: 3px; font-size: 12px; }
-/* line 152, ../sass/partials/list.scss */
-ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .subtitle span { margin-left: 1em; margin-right: 1em; }
-/* line 156, ../sass/partials/list.scss */
-ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .subtitle span:first-child { margin-left: 0; }
-/* line 157, ../sass/partials/list.scss */
-ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .subtitle span:last-child { margin-right: 0; }
 /* line 160, ../sass/partials/list.scss */
+ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .subtitle { display: block; margin-top: 3px; font-size: 12px; }
+/* line 167, ../sass/partials/list.scss */
+ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .subtitle span { margin-left: 1em; margin-right: 1em; }
+/* line 171, ../sass/partials/list.scss */
+ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .subtitle span:first-child { margin-left: 0; }
+/* line 172, ../sass/partials/list.scss */
+ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .subtitle span:last-child { margin-right: 0; }
+/* line 175, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.main .subtitle span.icon:before { font-size: 1.5em; color: #cccccc; }
-/* line 169, ../sass/partials/list.scss */
+/* line 184, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.action { font-size: 14px; }
-/* line 173, ../sass/partials/list.scss */
+/* line 188, ../sass/partials/list.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.action a { color: #0098cb; }
 /* line 128, ../sass/partials/mixins.scss */
 ul.tablelist-group li.tablelist-group-row ul.tablelist li.action a:hover { color: white; background-color: #0098cb; border-radius: 0px; text-decoration: none; }
 
-/* line 191, ../sass/partials/list.scss */
+/* line 206, ../sass/partials/list.scss */
 ul.tablelist.message li.icon .block { width: 70px !important; height: 70px !important; }
-/* line 196, ../sass/partials/list.scss */
-ul.tablelist.message li.icon .block.circle { border-radius: 70px !important; }
-/* line 203, ../sass/partials/list.scss */
-ul.tablelist.message li.main .message { font-family: "Open Sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif; font-size: 16px; line-height: 1.5em; color: #191919; }
 /* line 211, ../sass/partials/list.scss */
+ul.tablelist.message li.icon .block.circle { border-radius: 70px !important; }
+/* line 218, ../sass/partials/list.scss */
+ul.tablelist.message li.main .message { font-family: "Open Sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif; font-size: 16px; line-height: 1.5em; color: #191919; }
+/* line 226, ../sass/partials/list.scss */
 ul.tablelist.message li.main .subtitle { padding-top: 5px; }
 
-/* line 218, ../sass/partials/list.scss */
+/* line 233, ../sass/partials/list.scss */
 .message-add { padding-top: 20px; padding-bottom: 20px; padding-left: 90px; }
-/* line 225, ../sass/partials/list.scss */
+/* line 240, ../sass/partials/list.scss */
 .message-add h4 { margin-bottom: 10px; }
-/* line 230, ../sass/partials/list.scss */
+/* line 245, ../sass/partials/list.scss */
 .message-add textarea { width: 100%; margin-bottom: 10px; }
 
 /*/ Block Lists /*/
-/* line 242, ../sass/partials/list.scss */
+/* line 257, ../sass/partials/list.scss */
 ul.block-list { overflow: auto; }
-/* line 246, ../sass/partials/list.scss */
+/* line 261, ../sass/partials/list.scss */
 ul.block-list li { display: inline-block; float: left; width: 80px; height: 80px; margin-right: 5px; margin-bottom: 5px; }
-/* line 256, ../sass/partials/list.scss */
+/* line 271, ../sass/partials/list.scss */
 ul.block-list li a { text-decoration: none; }
-/* line 260, ../sass/partials/list.scss */
-ul.block-list li a .block { background-repeat: no-repeat; background-size: 100% auto; background-position: center center; width: 100%; height: 100%; border: 1px solid #e7edef; }
-/* line 268, ../sass/partials/list.scss */
-ul.block-list li a .block.overflow { color: #0098cb; background-color: #f9fafb; border: 1px solid #e7edef; text-align: center; font-size: 30px; }
 /* line 275, ../sass/partials/list.scss */
-ul.block-list li a .block.overflow span { display: block; position: relative; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); }
+ul.block-list li a .block { background-repeat: no-repeat; background-size: 100% auto; background-position: center center; width: 100%; height: 100%; border: 1px solid #e7edef; }
 /* line 283, ../sass/partials/list.scss */
+ul.block-list li a .block.overflow { color: #0098cb; background-color: #f9fafb; border: 1px solid #e7edef; text-align: center; font-size: 30px; }
+/* line 290, ../sass/partials/list.scss */
+ul.block-list li a .block.overflow span { display: block; position: relative; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); }
+/* line 298, ../sass/partials/list.scss */
 ul.block-list li a .block.overflow sup { font-size: .5em; }
 
 /*/ Bootstrap Overrides /*/
@@ -513,7 +541,7 @@ input, .form-group input { padding: 0.5em; font-size: 16px !important; height: a
 .form-group textarea, textarea { padding: 1em; width: 100%; }
 
 /* line 143, ../sass/partials/form.scss */
-textarea + a.submit, textarea + .message + a.submit, .form-group textarea + a.submit, .form-group textarea + .message + a.submit { margin-top: 10px; display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; }
+textarea + a.submit, textarea + .message + a.submit, .form-group textarea + a.submit, .form-group textarea + .message + a.submit { margin-top: 10px; display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; }
 /* line 66, ../sass/partials/mixins.scss */
 textarea + a.submit .icon, textarea + .message + a.submit .icon, .form-group textarea + a.submit .icon, .form-group textarea + .message + a.submit .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
@@ -525,7 +553,7 @@ textarea + a.submit.inactive, textarea + .message + a.submit.inactive, .form-gro
 section#submit > div { padding-top: 40px; border-top: 1px solid #e7edef; }
 
 /* line 155, ../sass/partials/form.scss */
-a.submit.submit-form { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; padding: 0.75em; padding-left: 2em; padding-right: 2em; }
+a.submit.submit-form { display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #ffaa00; border: 1px solid #ffaa00; padding: 0.75em; padding-left: 2em; padding-right: 2em; }
 /* line 66, ../sass/partials/mixins.scss */
 a.submit.submit-form .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
@@ -559,7 +587,7 @@ a.submit.submit-form.inactive { color: #ffaa00 !important; background-color: rgb
 /* line 252, ../sass/partials/form.scss */
 .multipicker .multipicker-row a.remove:hover { color: red; }
 /* line 257, ../sass/partials/form.scss */
-.multipicker a.button.add { margin-top: 20px; display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
+.multipicker a.button.add { margin-top: 20px; display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
 /* line 66, ../sass/partials/mixins.scss */
 .multipicker a.button.add .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
@@ -576,7 +604,7 @@ a.submit.submit-form.inactive { color: #ffaa00 !important; background-color: rgb
 /* line 286, ../sass/partials/form.scss */
 .input-list .input-list-row a.remove:hover { color: red; }
 /* line 291, ../sass/partials/form.scss */
-.input-list a.button.add { margin-top: 20px; display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
+.input-list a.button.add { margin-top: 20px; display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
 /* line 66, ../sass/partials/mixins.scss */
 .input-list a.button.add .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
@@ -585,7 +613,7 @@ a.submit.submit-form.inactive { color: #ffaa00 !important; background-color: rgb
 .input-list a.button.add.inactive { color: #0098cb !important; background-color: rgba(0, 152, 203, 0.2) !important; border: 1px solid rgba(0, 152, 203, 0.2) !important; }
 
 /* line 300, ../sass/partials/form.scss */
-.people-list a.button.add { margin-top: 20px; display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
+.people-list a.button.add { margin-top: 20px; display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
 /* line 66, ../sass/partials/mixins.scss */
 .people-list a.button.add .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
@@ -596,7 +624,7 @@ a.submit.submit-form.inactive { color: #ffaa00 !important; background-color: rgb
 /* line 309, ../sass/partials/form.scss */
 .photo-chooser .photo-preview { background-repeat: no-repeat; background-size: 100% auto; background-position: center center; width: 100px; height: 100px; background-color: #dddddd; }
 /* line 319, ../sass/partials/form.scss */
-.photo-chooser a.button { margin-top: 20px; display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
+.photo-chooser a.button { margin-top: 20px; display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid #0098cb; font-size: 14px !important; line-height: 1em; padding: 0.5em 1em 0.75em 1em !important; }
 /* line 66, ../sass/partials/mixins.scss */
 .photo-chooser a.button .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
@@ -611,7 +639,7 @@ a.submit.submit-form.inactive { color: #ffaa00 !important; background-color: rgb
 
 /*/ Buttons /*/
 /* line 343, ../sass/partials/form.scss */
-.button.submit { display: inline-block; padding: 0em 1.15em 0.35em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #0098cb; border: 1px solid #0098cb; }
+.button.submit { display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: white; background-color: #0098cb; border: 1px solid #0098cb; }
 /* line 66, ../sass/partials/mixins.scss */
 .button.submit .icon { font-size: 30px; }
 /* line 72, ../sass/partials/mixins.scss */
