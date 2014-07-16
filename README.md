@@ -8,7 +8,7 @@ TODO
 
 TODO
 
-Clicking the profile button in nav ( top right ) will bring you to the site-map page.
+The "logout" link will redirect to the sitemap page. It can be found in the profile overflow menu ( top right ). On mobile, its the last link in the menu.
 
 ## Dependencies
 
