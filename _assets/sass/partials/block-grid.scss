@@ -79,12 +79,11 @@
 
 			.info
 			{
-				// border: 1px solid red;
 				position: absolute;
 				top: 0px;
 				left: 0px;
 
-				display: table !important;
+				display: block !important;
 				width: 100%;
 				height: 100%;
 
@@ -92,29 +91,41 @@
 
 				.wrapper
 				{
-					display: table-cell;
+					position: relative;
+					height: 100%;
+
+					display: block;
 					text-align: center;
 					vertical-align: middle;
 				}
 
 				.wrapper > span
 				{
-					position: relative;
+					position: absolute !important;
 
 					display: inline-block;
 					width: 100%;
+
 
 					color: white;
 
 					&.title
 					{
+						top: 45%;
+						@include transform( translate(0, -45%) );
+						left: 0px;
+
 						font-weight: 600;
 						font-size: 18px;
 					}
 
 					&.subtitle
 					{
-						margin-top: 5px;
+						top: 45%;
+						@include transform( translate(0, -45%) );
+						left: 0px;
+
+						margin-top: 1.5em;
 						font-size: 14px;
 
 						.icon
@@ -125,12 +136,12 @@
 					{
 						@include button( white, $color-primary );
 
-						position: absolute;
 						bottom: 20px;
 						left: 20%;
 						width: 60%;
 
-						padding: 0.35em 1em 0.5em 1em !important;
+						line-height: 110% !important;
+						padding: 0.5em 1em 0.5em 1em !important;
 
 						.icon
 						{ 

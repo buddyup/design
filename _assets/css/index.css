@@ -569,26 +569,26 @@ ul.bulleted { list-style-type: disc; padding-left: 1.25em; }
 /* line 76, ../sass/partials/block-grid.scss */
 .block-grid .block.selected, .block-grid .block:hover { position: relative; }
 /* line 80, ../sass/partials/block-grid.scss */
-.block-grid .block.selected .info, .block-grid .block:hover .info { position: absolute; top: 0px; left: 0px; display: table !important; width: 100%; height: 100%; background-color: rgba(0, 152, 203, 0.85); }
-/* line 93, ../sass/partials/block-grid.scss */
-.block-grid .block.selected .info .wrapper, .block-grid .block:hover .info .wrapper { display: table-cell; text-align: center; vertical-align: middle; }
-/* line 100, ../sass/partials/block-grid.scss */
-.block-grid .block.selected .info .wrapper > span, .block-grid .block:hover .info .wrapper > span { position: relative; display: inline-block; width: 100%; color: white; }
-/* line 109, ../sass/partials/block-grid.scss */
-.block-grid .block.selected .info .wrapper > span.title, .block-grid .block:hover .info .wrapper > span.title { font-weight: 600; font-size: 18px; }
-/* line 115, ../sass/partials/block-grid.scss */
-.block-grid .block.selected .info .wrapper > span.subtitle, .block-grid .block:hover .info .wrapper > span.subtitle { margin-top: 5px; font-size: 14px; }
-/* line 120, ../sass/partials/block-grid.scss */
+.block-grid .block.selected .info, .block-grid .block:hover .info { position: absolute; top: 0px; left: 0px; display: block !important; width: 100%; height: 100%; background-color: rgba(0, 152, 203, 0.85); }
+/* line 92, ../sass/partials/block-grid.scss */
+.block-grid .block.selected .info .wrapper, .block-grid .block:hover .info .wrapper { position: relative; height: 100%; display: block; text-align: center; vertical-align: middle; }
+/* line 102, ../sass/partials/block-grid.scss */
+.block-grid .block.selected .info .wrapper > span, .block-grid .block:hover .info .wrapper > span { position: absolute !important; display: inline-block; width: 100%; color: white; }
+/* line 112, ../sass/partials/block-grid.scss */
+.block-grid .block.selected .info .wrapper > span.title, .block-grid .block:hover .info .wrapper > span.title { top: 45%; -moz-transform: translate(0, -45%); -ms-transform: translate(0, -45%); -webkit-transform: translate(0, -45%); transform: translate(0, -45%); left: 0px; font-weight: 600; font-size: 18px; }
+/* line 122, ../sass/partials/block-grid.scss */
+.block-grid .block.selected .info .wrapper > span.subtitle, .block-grid .block:hover .info .wrapper > span.subtitle { top: 45%; -moz-transform: translate(0, -45%); -ms-transform: translate(0, -45%); -webkit-transform: translate(0, -45%); transform: translate(0, -45%); left: 0px; margin-top: 1.5em; font-size: 14px; }
+/* line 131, ../sass/partials/block-grid.scss */
 .block-grid .block.selected .info .wrapper > span.subtitle .icon, .block-grid .block:hover .info .wrapper > span.subtitle .icon { font-size: 22px !important; }
-/* line 124, ../sass/partials/block-grid.scss */
-.block-grid .block.selected .info .wrapper > span.button, .block-grid .block:hover .info .wrapper > span.button { display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid white; position: absolute; bottom: 20px; left: 20%; width: 60%; padding: 0.35em 1em 0.5em 1em !important; }
+/* line 135, ../sass/partials/block-grid.scss */
+.block-grid .block.selected .info .wrapper > span.button, .block-grid .block:hover .info .wrapper > span.button { display: inline-block; padding: 0.75em 1.15em 0.75em 1.15em; border-radius: 5px; font-weight: 400; font-size: 16px; text-decoration: none; font-size: 18px; color: #0098cb; background-color: white; border: 1px solid white; bottom: 20px; left: 20%; width: 60%; line-height: 110% !important; padding: 0.5em 1em 0.5em 1em !important; }
 /* line 65, ../sass/partials/mixins.scss */
 .block-grid .block.selected .info .wrapper > span.button .icon, .block-grid .block:hover .info .wrapper > span.button .icon { font-size: 30px; }
 /* line 71, ../sass/partials/mixins.scss */
 .block-grid .block.selected .info .wrapper > span.button:hover, .block-grid .block:hover .info .wrapper > span.button:hover { background-color: transparent; color: white; }
 /* line 86, ../sass/partials/mixins.scss */
 .block-grid .block.selected .info .wrapper > span.button.inactive, .block-grid .block:hover .info .wrapper > span.button.inactive { color: white !important; background-color: rgba(255, 255, 255, 0.2) !important; border: 1px solid rgba(255, 255, 255, 0.2) !important; }
-/* line 135, ../sass/partials/block-grid.scss */
+/* line 146, ../sass/partials/block-grid.scss */
 .block-grid .block.selected .info .wrapper > span.button .icon, .block-grid .block:hover .info .wrapper > span.button .icon { display: inline-block; padding-bottom: 0.15em; font-size: 22px !important; }
 
 /*/ Generic List /*/
@@ -716,11 +716,9 @@ header { position: fixed; width: 100%; top: 0px; z-index: 100; }
 .block-grid .block-group-container .block-group, .block-grid .block-group-container .block.large { float: left; width: 33.3%; }
 /* line 98, ../sass/pages/index.scss */
 .block-grid .block-group-container .block.large { height: auto; }
-/* line 102, ../sass/pages/index.scss */
-.block-grid .block-group-container .block.large * { width: 100%; height: 100%; }
-/* line 109, ../sass/pages/index.scss */
+/* line 108, ../sass/pages/index.scss */
 .block-grid .block-group-container .block.large img { width: 100%; height: auto; }
-/* line 119, ../sass/pages/index.scss */
+/* line 118, ../sass/pages/index.scss */
 .block-grid .block-group-container .block-group .block { width: 50%; height: auto; }
-/* line 125, ../sass/pages/index.scss */
+/* line 124, ../sass/pages/index.scss */
 .block-grid .block-group-container .block-group .block img { width: 100%; height: auto; }
